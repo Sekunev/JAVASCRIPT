@@ -124,13 +124,39 @@ let fiyat = 6000;
 // else {
 //     console.log('Kullanıcı adı hatalı.')
 // }
+// -----
 
-let yas = 20
-let mezuniyet = 'lise';
+// let yas = 20
+// let mezuniyet = 'lise';
 
-if ((yas >= 20) && (mezuniyet== 'lise' || mezuniyet== 'lisans')) {
-    console.log('ehliyet alabilir.')
+//  && --> AND inlamını taşır.
+//  || --> OR anlamında kullanılır.
+
+// if ((yas >= 20) && (mezuniyet== 'lise' || mezuniyet== 'lisans')) {
+//     console.log('ehliyet alabilir.')
+// }
+// else {
+//     console.log('ehliyet şartları yok.')
+// }
+
+// // uygulama sayı 10-58 arasındamı
+
+// x = 5
+
+// if (x > 10 && x < 58) {
+//     console.log('sayı 10 ile 58 arasındadır.')
+// }
+// else {
+//     console.log('sayı 10 ile 58 arasında değildir.')
+// }
+
+// uygulama sayı poz tek sayı mı?
+
+x = 4
+
+if (x > 0 && x %2 != 0 ) {
+    console.log('poz tek sayı.')
 }
 else {
-    console.log('ehliyet şartları yok.')
+    console.log('poz tek sayı değil.')
 }
