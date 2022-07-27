@@ -1,3 +1,8 @@
+// "use strict" yazarsak. burada  katı kurallar gecerlı olsun demektır...
+// tavsıye edılıyor sıddetl...
+// tarayıcıya sadece js kuralları gecerlı kendı sacma komplekslerıne gırme sadece js kuralları gecerlı olsun demektır.
+// html sayfasında genelde css ve js. body nın kapanıs etıketınıın hemen ustune yazılır.
+// bunun sebebı SEO dur. sayfanın daha hızlı yuklenmesı ıcın bu yere konumlandırıyoruz.
 console.log("merhaba, js... senınle yenı bır baslangız yapıyorum...");
 // cıft slash-bolu ısaretı yorum satıtı yapar...
 console.log(500 + 500 * 0.3); //maas ali
@@ -10,7 +15,12 @@ var zam = 0.3; // seklınde atamaları yaparsak
 
 console.log(maasAli + maasAli * zam); //maas ali
 console.log(maasCan + maasCan * zam); //maas can
+parse;
+var mesaj;
+console.log("mesaj");
 
+// tek satır ıcın yorum satırı yapmak ıcın 2 adet bolu ısaretı(//)
+// /*.......bırden fazla satırı yorum satırı yapmak ıstıyorsak */ kullanılır.
 // degıskenlerın yerıne atanan degerlerı yazınca aynı sonucu verecektır bıze
 // degısken tanımlama yaparken ;
 // Türkçe karakter kullanmayın...

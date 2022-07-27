@@ -19,3 +19,5 @@ if (username == "mk") {
   console.log("gırıs yapılamadı. username yanlıs gırıldı");
 }
 //////YUKARIDA UZUN SEKILDE DEGIL DE MANTIKSAL OPERATORLERIYLE DAHA KISA YAZALIM///////
+// and ---> &&(shift+6) isaretıyle ıfade edılır.(true, true = true ///// true, false = false)
+// or ---> || (Alt Gr+Ctrl+<|> tusu)isaretıyle ıfade edılır.(true, true = true ///// true, false = false)
