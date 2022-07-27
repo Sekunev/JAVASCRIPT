@@ -1,3 +1,9 @@
+"use strict" // bu sayfada Java script kurallarını uygula.
+// alert("hello world")
+console.error('hata oluştu..') // hata mesajı yazdır.
+console.warn("bir uyarı oluştu.")  // uyarı mesajı.
+console.table({adı: 'aslı', soyadı: 'tolga', yaşı:26}); // tablo oluşturabiliriz.
+
 // Yorum satırı '//' dır
 
 // 2 yöntenle değişken atanabilir. 
@@ -7,35 +13,76 @@
 // let ile tanımlanan değişkene yeni değerler atayabiliriz. Ancak, değişkeni yeniden oluşturamayız. let blok kapsama (block scope) sahiptir. Yani, let ile oluşturulan değişken sadece oluşturulduğu süslü parantezler {} (if-for gibi) içerisinde kullanılabilir, dışarısından erişilemez. bir değişken let ile oluşturulduktan sonra yeni değer ataması yapılabilmesi için başına let yazılmadan atama yapılabilir.
 
 var urun = 'iphone 5000';  // string
+urun = 'samsung'
 let fiyat = 6000;  //number
+var urun = 'Huvai'
+fiyat = 2000
+const sebze = 'domates'
+// const sebze = 'biber' // const ile tanımladığı için değiştirilmez.
+// sebze = 'biber' // const ile tanımlandığı için değişmez. 
 
 // Değişken belirlerken;
 // Türkçe karekter kullanma
 // arada boşluk olmaz
 // sayı ile başlamaz.
 
+console.log(urun)
+console.log(fiyat)
 console.log(typeof urun)  
 console.log(typeof fiyat)
 
-// let sayi1 = "10"  
-// let sayi2 = "20"
+document.write('HOŞ GELDİNİZ.')  // tarayıcıyıya yazdırmak için.
 
-// console.log(sayi1+sayi2) // iki str'yi toplarsak concat eder.
+let sayi1 = "10"  
+let sayi2 = "20"
 
-// let sayi1 = 10; 
-// let sayi2 = "20";
+console.log(sayi1+sayi2) // iki str'yi toplarsak concat eder.
 
-// console.log((sayi1) + Number(sayi2)); // Num ile str yi concat edemeyiz. Toplayabilmemiz içinse Str'yi İnt'a çevirmeliyim.
+sayi1 = 10; 
+sayi2 = "20";
 
-let sayi1 = 10;
-let sayi2 = 20;
+console.log((sayi1) + Number(sayi2)); // Num ile str yi concat edemeyiz. Toplayabilmemiz içinse Str'yi İnt'a çevirmeliyim.
+
+
+
+sayi1 = 10;
+sayi2 = 20;
 
 console.log(sayi1.toString() + sayi2.toString());  // yada concat için int 'leri str'ye çevirmeliyiz. yöntem: int.toString()
+
+console.log(sayi1 + sayi2);
+
+let degisken = 'malatya' + 44 + 46  // concat eder.
+
+console.log(degisken)
+
+let x = 11e+7 // retrn --> 110000000
+x = 11e-7 // retrn --> 0.0000011
+console.log(x)
+
 
 let isim = 'sena'
 let soyad = 'tarım'
 
 console.log(isim + " " + soyad)
+
+let kisi = {
+    adi : 'kaya',
+    soyadi : 'demir',
+    yas : '30'
+}
+
+console.log(kisi.adi)
+
+function gamze() {
+    console.log('abdullah')
+    console.log('Cooper')
+    console.log('veli')
+    
+}
+gamze() // fonksiyon içinde tanımlanan bütün veriler yazdırıldı.
+
+
 
 let sinav_notu = 70;
 let basarilimi = (sinav_notu >= 50)
