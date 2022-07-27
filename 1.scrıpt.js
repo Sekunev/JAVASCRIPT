@@ -86,6 +86,7 @@ console.log(typeof ogrenci2DersOrt);
 let gecmeDurumu1 = ogrenci1DersOrt >= 50;
 console.log(gecmeDurumu1);
 let gecmeDurumu2 = ogrenci2DersOrt >= 50;
+cl;
 console.log(gecmeDurumu2);
 /// yukarıdakı gıbı ılk basta degıskene atayabılır daha sonra o degıskenı console.log dan goruntuleyebılırız.
 //ya da dırekt sartı console.logtan sartımızı yazarak goruntuleyebılırız.
