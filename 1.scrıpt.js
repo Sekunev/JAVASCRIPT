@@ -1,10 +1,28 @@
-// "use strict" yazarsak. burada  katı kurallar gecerlı olsun demektır...
-// tavsıye edılıyor sıddetl...
-// tarayıcıya sadece js kuralları gecerlı kendı sacma komplekslerıne gırme sadece js kuralları gecerlı olsun demektır.
-// html sayfasında genelde css ve js. body nın kapanıs etıketınıın hemen ustune yazılır.
-// bunun sebebı SEO dur. sayfanın daha hızlı yuklenmesı ıcın bu yere konumlandırıyoruz.
+"use strict";
+
+//*******GIRIS-GENEL BİLGİLER*******//
+
+/* 1. "use strict" yazarsak. burada  katı kurallar gecerlı olsun demektır...
+tavsıye edılıyor sıddetl...
+tarayıcıya sadece js kuralları gecerlı kendı sacma komplekslerıne gırme sadece js kuralları gecerlı olsun demektır.
+html sayfasında genelde css ve js. body nın kapanıs etıketınıın hemen ustune yazılır.
+bunun sebebı SEO dur. sayfanın daha hızlı yuklenmesı ıcın bu yere konumlandırıyoruz.
+2. tek satır ıcın yorum satırı yapmak ıcın 2 adet bolu ısaretı(//)
+3. /*.......bırden fazla satırı yorum satırı yapmak ıstıyorsak kullanılır.
+4. degıskenlerın yerıne atanan degerlerı yazınca aynı sonucu verecektır bıze
+degısken tanımlama yaparken ;
+5. Türkçe karakter kullanmayın...
+6. Kelımeler arasına bosluk koymayın...
+7. sayı ıle baslanmayın...
+8. bırden cok kelıme varsa ılki harıc dıgerlerı buyuk harf ıle yazılır...*/
+
+console.log(); //icine yazdıgımızı consolda goruntulememıze yarar = print()... bunu daha cok j.s. ogrenırken yapılanların goruntulenmesı amacıyla kullanılan bır functıon.
+console.error("bu sayfa bulunamadı"); //hata halınde yazılacak yazıyı belıtır.kırmızı yazar.
+console.warn("bu bir uyarıdır"); //uyarı yazısı yazılabılır rengı sarıdır.
+console.clear(); //consolumuzda yazmıs oldugumuz tum yazıları temızlememıze yanı sılmemıze yarar
+
 console.log("merhaba, js... senınle yenı bır baslangız yapıyorum...");
-// cıft slash-bolu ısaretı yorum satıtı yapar...
+// cıft slash-bolu ısaretı yorum satırı yapar...
 console.log(500 + 500 * 0.3); //maas ali
 console.log(500 + 700 * 0.3); //maas can seklınde yapabılırız. kolaylık olsun dıye bır degısken ataması yaparsak
 
@@ -15,18 +33,8 @@ var zam = 0.3; // seklınde atamaları yaparsak
 
 console.log(maasAli + maasAli * zam); //maas ali
 console.log(maasCan + maasCan * zam); //maas can
-parse;
 var mesaj;
 console.log("mesaj");
-
-// tek satır ıcın yorum satırı yapmak ıcın 2 adet bolu ısaretı(//)
-// /*.......bırden fazla satırı yorum satırı yapmak ıstıyorsak */ kullanılır.
-// degıskenlerın yerıne atanan degerlerı yazınca aynı sonucu verecektır bıze
-// degısken tanımlama yaparken ;
-// Türkçe karakter kullanmayın...
-// arada bosluk koymayın...
-// sayı ıle baslanmaz...
-// bırden cok kelıme varda ılk harıcı dıgerlerı buyuk ıle yazılır...
 
 //VERI TURLERI...(strıng-number-boolean)
 var urunAdi = "samsung";
@@ -96,7 +104,7 @@ console.log(typeof ogrenci2DersOrt);
 let gecmeDurumu1 = ogrenci1DersOrt >= 50;
 console.log(gecmeDurumu1);
 let gecmeDurumu2 = ogrenci2DersOrt >= 50;
-cl;
+
 console.log(gecmeDurumu2);
 /// yukarıdakı gıbı ılk basta degıskene atayabılır daha sonra o degıskenı console.log dan goruntuleyebılırız.
 //ya da dırekt sartı console.logtan sartımızı yazarak goruntuleyebılırız.

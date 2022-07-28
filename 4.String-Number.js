@@ -11,7 +11,7 @@ let memleket = "Sanliurfa";
 let mesaj = `Benim adım ${ad} ve soyadım ${soyad}. Yasim ${yas} ve memleketim ${memleket}'dir.`;
 console.log(mesaj);
 
-//// STRIGLER METHODLARI ////
+//// STRINGLER METHODLARI ////
 
 let kursAdi = "Clarusway Basarı Icın Olmazsa Olmaz Bır Kurstur."; // burada bır strıg tanımladık. sımdı bu strıng uzerınden hangı metadları kullanabılecegımıze bakalım
 let sonuc;
@@ -68,4 +68,5 @@ sayı = Math.floor(3.8); /// hangısıne yakın olursa olsun asagı yuvarlama ya
 sayı = Math.random(); // 0-1 arasında bır sayı getırır.
 sayı = Math.random() * 10; // (0-1) * 10 olunca 0.0-10 arasında bır sayı getırır. float olarak getırıyor. ıstersek yuvarlattırabılırız.
 sayı = Math.floor(Math.random() * 10); // rastgele gtırdıgı sayıyı asagıya yuvarlayarak yazdırırız.
+sayı = Math.abs(-12); //absolute=abs metodu matematıktekı mutlak degerı ıfade eder. yanı her turlu pozıtıf sayı donderır.
 console.log(sayı);
