@@ -18,6 +18,14 @@ if (username == "mk") {
 } else {
   console.log("gırıs yapılamadı. username yanlıs gırıldı");
 }
+console;
 //////YUKARIDA UZUN SEKILDE DEGIL DE MANTIKSAL OPERATORLERIYLE DAHA KISA YAZALIM///////
 // and ---> &&(shift+6) isaretıyle ıfade edılır.(true, true = true ///// true, false = false)
-// or ---> || (Alt Gr+Ctrl+<|> tusu)isaretıyle ıfade edılır.(true, true = true ///// true, false = false)
+// or ---> || (Alt Gr+Ctrl+<|> tusu)isaretıyle ıfade edılır.(true, true = true ///// true, false = false
+
+let x = 4;
+if (10 < x < 50) {
+  console.log("arasındadır");
+} else {
+  console.log("arasında degıldır");
+}
