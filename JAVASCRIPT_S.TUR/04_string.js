@@ -7,9 +7,9 @@ let yas = 30
 mesaj = `Adım ${adı}, Soyadım ${Soyadi}`;
 console.log(mesaj);
 
-// ternary operators;
+// ternary operators syntax'ı:
 
-// syntax'ı condition ? True value : False value
+// condition ? True value : False value
 
 let emeklilik = (65 - yas > 0) ? "Emekliliğe "+ (65 - yas ) + " yıl kaldı" : "emeklisiniz.";
 

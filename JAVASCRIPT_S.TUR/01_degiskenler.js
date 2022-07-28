@@ -31,7 +31,7 @@ console.log(fiyat)
 console.log(typeof urun)  
 console.log(typeof fiyat)
 
-document.write('HOŞ GELDİNİZ.')  // tarayıcıyıya yazdırmak için.
+// document.write('HOŞ GELDİNİZ.')  // tarayıcıyıya yazdırmak için.
 
 let sayi1 = "10"  
 let sayi2 = "20"
@@ -42,23 +42,6 @@ sayi1 = 10;
 sayi2 = "20";
 
 console.log((sayi1) + Number(sayi2)); // Num ile str yi concat edemeyiz. Toplayabilmemiz içinse Str'yi İnt'a çevirmeliyim.
-
-
-
-sayi1 = 10;
-sayi2 = 20;
-
-console.log(sayi1.toString() + sayi2.toString());  // yada concat için int 'leri str'ye çevirmeliyiz. yöntem: int.toString()
-
-console.log(sayi1 + sayi2);
-
-let degisken = 'malatya' + 44 + 46  // concat eder.
-
-console.log(degisken)
-
-let x = 11e+7 // retrn --> 110000000
-x = 11e-7 // retrn --> 0.0000011
-console.log(x)
 
 
 let isim = 'sena'
@@ -81,6 +64,67 @@ function gamze() {
     
 }
 gamze() // fonksiyon içinde tanımlanan bütün veriler yazdırıldı.
+
+
+// Tür dönüşümü
+// let a = "Tür dönüşümü"
+console.log("Tür dönüşümü")
+
+// int --> str'ye çevirme.
+
+sayi1 = 10;
+sayi2 = 20;
+
+console.log(sayi1.toString() + sayi2.toString());  // yada concat için int 'leri str'ye çevirmeliyiz. yöntem: int.toString()
+
+let val;
+val = String(10)  // Bir int 'i str'ye çevirdik.
+
+// bool to str
+val = String(true);
+
+// date to string
+val = String(new Date());
+
+// array to string
+val = String([1, 2, 3])
+
+// toString()
+val = (10).toString();
+
+// Str to Number
+
+// val = Number('10');
+// val = Number(true);  // 1 döner
+// val = Number(false); // 0 döner
+// val = Number(null);  // 0 döner.
+// val = Number('a');  // NaN Not An Number döner. str ifade int'e çevrilemez.
+val = Number([1,2,3]); // NaN Not An Number döner. array ifade int'e çevrilemez.
+val = parseInt('10')  // tamsayı döner.
+val = parseFloat('10.5')  // float döner.
+
+console.log(val)
+console.log(typeof val)
+console.log(val.toFixed(2))
+
+
+
+// str --> int'e çevirme.
+sayi1 = Number('10');
+sayi2 = Number('20');
+
+console.log(sayi1 + sayi2);  // şimdi toplama yapar
+
+let degisken = 'malatya' + 44 + 46  // concat eder.
+
+console.log(degisken)
+
+let x = 11e+7 // retrn --> 110000000
+x = 11e-7 // retrn --> 0.0000011
+console.log(x)
+
+
+
 
 
 
@@ -128,3 +172,7 @@ let ogr1_yas = su_anki_yıl -parseInt(doğumt1);
 let ogr2_yas = su_anki_yıl -parseInt(doğumt2);
 console.log(ogr1_yas)
 console.log(ogr2_yas)
+
+
+l = 122
+l.to

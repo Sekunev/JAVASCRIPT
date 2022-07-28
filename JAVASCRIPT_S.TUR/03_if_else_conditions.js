@@ -71,17 +71,3 @@ if (x > y && x > z) {
 
 // ------>
 
-//  String
-
-// let adı = 'Ali'
-// let Soyadi = 'DEMİR'
-// let yas = 30
-
-// mesaj = `Adım ${adı}, Soyadım ${Soyadi}`;
-// console.log(mesaj);
-
-// // ternary operators;
-
-// let emeklilik = (65 - yas > 0) ? "Emekliliğe "+ (65 - yas ) + " yıl kaldı" : "emeklisiniz.";
-
-// console.log(emeklilik)
