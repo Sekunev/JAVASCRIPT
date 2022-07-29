@@ -123,6 +123,12 @@ if (ortalama >= 50 || final >= 70) {
 }
 
 
+const firstName = "asd"
+
+if (firstName == "asd") {
+    console.log("assffggg");
+}
+
 
 
 
