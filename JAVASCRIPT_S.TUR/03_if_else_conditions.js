@@ -71,3 +71,47 @@ if (x > y && x > z) {
 
 // ------>
 
+// switch if else ile yaptığımız işlemleri switch ile de yapabiliriz tersi de mümkün. koşul fazla ise switch daha mantıklı.
+
+let category = 'telefon'; // değişken
+switch(category){ 
+    case 'telefon':  // case'lerden handisi tanımlanan değişkenin value'siyle eşitse o case'nin altındaki blok çalışır.
+        console.log('telefon kategorisi');
+        break;
+
+    case 'bilgisayar':
+        console.log('bilgisayar kategorisi');
+        break;
+    default:
+        console.log('yanlıs kategori');
+}
+
+
+
+let day;
+
+switch(new Date().getDay()){
+    case 0:
+        day = 'Pazar';
+        break;
+    case 1:
+        day = 'Pazartesi';
+        break;
+    case 2:
+        day = 'Salı';
+        break;
+    case 3:
+        day = 'Çarşamba';
+        break;
+    case 4:
+        day = 'Peerşembe';
+        break;
+    case 5:
+        day = 'Cuma';
+        break;
+    case 6:
+        day = 'Cumartesi';
+        break;
+}
+
+console.log(`bugün günlerden ${day}`);
