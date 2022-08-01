@@ -6,11 +6,13 @@ console.table({adı: 'aslı', soyadı: 'tolga', yaşı:26}); // tablo oluşturab
 
 // Yorum satırı '//' dır
 
-// 2 yöntenle değişken atanabilir. 
+// 3 yöntenle değişken atanabilir. 
+
+// var: Değşiken tanımlanırken verilen değer sonradan değiştirilebilir. blok kapsama (block scope) sahip değildir.
 
 // const: sabit değerli değişkenler yaratabilmemizi sağlar. Değşiken tanımlanırken verilen değer sonradan değiştirilemez ve değişken bir defa tanımlanabilir. 
 
-// let ile tanımlanan değişkene yeni değerler atayabiliriz. Ancak, değişkeni yeniden oluşturamayız. let blok kapsama (block scope) sahiptir. Yani, let ile oluşturulan değişken sadece oluşturulduğu süslü parantezler {} (if-for gibi) içerisinde kullanılabilir, dışarısından erişilemez. bir değişken let ile oluşturulduktan sonra yeni değer ataması yapılabilmesi için başına let yazılmadan atama yapılabilir.
+// let: ile tanımlanan değişkene yeni değerler atayabiliriz. Ancak, değişkeni yeniden oluşturamayız. let blok kapsama (block scope) sahiptir. Yani, let ile oluşturulan değişken sadece oluşturulduğu süslü parantezler {} (if-for gibi) içerisinde kullanılabilir, dışarısından erişilemez. bir değişken let ile oluşturulduktan sonra yeni değer ataması yapılabilmesi için başına let yazılmadan atama yapılabilir.
 
 var urun = 'iphone 5000';  // string
 urun = 'samsung'
