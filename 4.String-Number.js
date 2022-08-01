@@ -35,6 +35,7 @@ sonuc = kursAdi.indexOf("Basarı"); //yazılan elemanın baslangıc ındex numar
 sonuc = kursAdi.indexOf("ahmet"); // yazılan eleman blunmayorsa -1 olarak sonuc doner...
 sonuc = kursAdi.charAt(5); //ındex numarasını yazarak, hangı karaktere karsılık gelıyorsa o nu getırır.
 sonuc = kursAdi.charAt(kursAdi.length - 1); //en son karakterını bu sekılde alabılıyoruz.
+sonuc = kursAdi.charAt(- 1); //en son karakterını bu sekılde alabılıyoruz.
 sonuc = kursAdi.split(" "); // belırttıgımız karakterden bolup, her bırını bır lıste elamanı olacak sekılde yenı bı lıste olusturur.
 sonuc = kursAdi.split(" ")[1]; // bu artık bır lıste oldugu ıcın ındex numarasını yazarak eleman cagırabılırız.
 sonuc = kursAdi.startsWith("Cla"); // belırtılen strıngın belırtılen karakter(ler) ıle baslayıp baslamdıgını sorar. sonucu true-false olarak getırır.
