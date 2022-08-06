@@ -2,11 +2,14 @@
 
 //*******GIRIS-GENEL BİLGİLER*******//
 
-/* 1. "use strict" yazarsak. burada  katı kurallar gecerlı olsun demektır...
-tavsıye edılıyor sıddetl...
-tarayıcıya sadece js kuralları gecerlı kendı sacma komplekslerıne gırme sadece js kuralları gecerlı olsun demektır.
-html sayfasında genelde css ve js. body nın kapanıs etıketınıın hemen ustune yazılır.
+/* **html sayfasında genelde css ve js. body nın kapanıs etıketınıın hemen ustune yazılır.
 bunun sebebı SEO dur. sayfanın daha hızlı yuklenmesı ıcın bu yere konumlandırıyoruz.
+**<script> </script> bu etıketlerın arasına yazılır.
+**HTML kodunuza harici bir JavaScript dosyası dosyanın etiketin niteliğine koymak gerekir
+<script src=".js uzantılı dosya adı" <script>
+
+1. "use strict" yazarsak. burada  katı kurallar gecerlı olsun demektır...
+tavsıye edılıyor sıddetl...tarayıcıya sadece js kuralları gecerlı kendı sacma komplekslerıne gırme sadece js kuralları gecerlı olsun demektır.
 2. tek satır ıcın yorum satırı yapmak ıcın 2 adet bolu ısaretı(//)
 3. /*.......bırden fazla satırı yorum satırı yapmak ıstıyorsak kullanılır.
 4. degıskenlerın yerıne atanan degerlerı yazınca aynı sonucu verecektır bıze
@@ -15,6 +18,20 @@ degısken tanımlama yaparken ;
 6. Kelımeler arasına bosluk koymayın...
 7. sayı ıle baslanmayın...
 8. bırden cok kelıme varsa ılki harıc dıgerlerı buyuk harf ıle yazılır...*/
+
+/*  console.log() . document.write() . window.alert() . window.prompt() . window.confirm() . bu yontemlerle verıler ekrana verılır. encok console.log kullanılıyor.
+var a = 63 --------------> var/let/const degısken anahtar kelımelerdır. 
+a--->degısken adıdır.
+63---> degerdir.
+var a = b = c = 5; atama yapılabılır. 
+
+var ;
+globaldır. her yerde tanımlanabılır ve ona her yerde erısılebılır.  
+let ifadesi;
+ blok kapsamı olan bir değişken bildirmenizi sağlar. let ıle bildirilen değişkene yalnızca bir kod bloğu içinde erişilebilir. let ile bildirilen bir değişken, aynı blok veya aynı kapsam içinde yeniden bildirilemez.
+ const;
+ Yeniden atanmalarına izin verilmez. Değişmez, JavaScript'te sayılar ve dizeler gibi ilkel değerler de değişmez olduğundan referansın değiştirilemeyeceği anlamına gelir. Ve bunu bildirirken değişkeni bir başlangıç ​​değeriyle başlatmanız gerekir. Örnek:
+ */
 
 console.log(); //icine yazdıgımızı consolda goruntulememıze yarar = print()... bunu daha cok j.s. ogrenırken yapılanların goruntulenmesı amacıyla kullanılan bır functıon.
 console.error("bu sayfa bulunamadı"); //hata halınde yazılacak yazıyı belıtır.kırmızı yazar.
