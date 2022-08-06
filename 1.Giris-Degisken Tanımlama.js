@@ -30,7 +30,31 @@ globaldır. her yerde tanımlanabılır ve ona her yerde erısılebılır.
 let ifadesi;
  blok kapsamı olan bir değişken bildirmenizi sağlar. let ıle bildirilen değişkene yalnızca bir kod bloğu içinde erişilebilir. let ile bildirilen bir değişken, aynı blok veya aynı kapsam içinde yeniden bildirilemez.
  const;
- Yeniden atanmalarına izin verilmez. Değişmez, JavaScript'te sayılar ve dizeler gibi ilkel değerler de değişmez olduğundan referansın değiştirilemeyeceği anlamına gelir. Ve bunu bildirirken değişkeni bir başlangıç ​​değeriyle başlatmanız gerekir. Örnek:
+ Yeniden atanmalarına izin verilmez. Değişmez, JavaScript'te sayılar ve dizeler gibi ilkel değerler de değişmez olduğundan referansın değiştirilemeyeceği anlamına gelir. Ve bunu bildirirken değişkeni bir başlangıç ​​değeriyle başlatmanız gerekir. 
+global scope; bır fonk. ıcınde tanımlanmayan genel yerde tanımlanan degıskenler
+functıon scope; sadece fon. ıcınde erısılebılır olması. var-let-cost hepsı ıcın bu gecerlıdır.
+blok scope;fonk. veya global scop ıcerısınde bı ıf vs. blok olusturup ıcınde erısılebılırlıgı ıfade edıyor.
+var; ıf den cıksa da fn ıcınde yıne calısır.
+functıon fn(num) {
+  if (num>5){
+    var newnum=5;
+  }
+}
+let;ifden cıktıktan sonra fn baska bır yerınde ulasılamaz-calısamaz.
+functıon fn(num) {
+  if (num>5){
+    var newnum=5;
+  }
+}
+
+fonksıyonda; if blogunda var ılşe tanımlarsan ıfın dısında fonk. ıcınde yıne erısılebılıyor. ama let ıle tanımlarsak ıf ın dısında fonk ıcınde calısmaz.
+const; programda degısmemesını ıstedıgım seylerı bununla tanımlıyoruz.degısmez bu. ımmutablety... degıstırılemez.
+
+stack; slf sercıste yemek tabagı alırken alttakıler bır tık yukarı cıkar. eger oraya temız tabak konulacaksa en uste konur...programlarımızda en onemlı calısma sıstemı;en son nerde kaldım.yenı bırsey gelınce o ılke gelıyor sonra baska gelırse bu sefer o one alınıyorç yanı ılk olarak onu  calıstırırz-hallederız daha sonra bı once gelen en sonkı blok calısır-calıstırılır. daha sonra yıne bı alt bı al bu sekılde enson ılk yazılan calısır.
+heap;
+
+primitive value
+
  */
 
 console.log(); //icine yazdıgımızı consolda goruntulememıze yarar = print()... bunu daha cok j.s. ogrenırken yapılanların goruntulenmesı amacıyla kullanılan bır functıon.
