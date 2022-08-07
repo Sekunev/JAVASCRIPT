@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="myscript.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Basics 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img
+          src="https://clarusway.com/wp-content/uploads/2021/06/CLARUSWAY_LOGO.png"
+          alt="Clarusway"
+          class="logo"
+        />
+      </div>
+      <br />
+      <h1>JavaScript Basics <em class="fas fa-lg fa-angle-double-right"></em></h1>
+      <h2>S1</h2>
+    </header>
     <ol>
-        <li><p><span style="color: red;">Script </span>dosyası etiketleri, HTML sayfasının<body>,<head>bölümlerine veya her ikisinede eklenebilir</p> </li>
-        <li><p><span style="color: red;">js </span>JavaScript dosyalarının dosya uzantısı js.'dir</p> </li>
-        <li><p><span style="color: red;">Consolu açma kısayolları: </span>F12klavyeye basın veya klavyede CTRL+ SHIFT+ tuşlarına basın "I" veya Sayfaya sağ tıklayın ve incele'yi seçin</p> </li>
-        <li><p><span style="color: red;">Yorum, Comments </span>● çift eğik çizgiden sonra tek satırlık yorumlar //
-            ● ve /* ile */ arasında çok satırlı yorumlar</p> </li>
-        <li><p><span style="color: red;">JavaScript is case sensitive.</span>JavaScript büyük/küçük harf duyarlıdır. Bu, myNumber, mynumber veya MYNUMBER değişkenlerinin aynı değişkenler olmadığı anlamına gelir. Hepsi farklı değişkenlerdir.</p> </li>
-        <li><p><span style="color: red;">Atama her zaman sağdan sola gider.</span></p> </li>
-        <li><p><span style="color: red;">Değişkenler için isim tanımlamanın genel kuralları</span> İsimler harf, rakam, alt çizgi ve dolar işaretlerinden oluşabilir.
-            ➤ İlk karakter olarak sayılara izin verilmez.
-            ➤ İlk karakter;
-               ● bir harf
-                ● bir alt çizgi ( _ )
-                ● bir dolar işareti ( $ )  Ayrılmış kelimeler isim olarak kullanılamaz</p> </li>
-        <li><p><span style="color: red;">var ifadesi, </span>İle bildirilen birdeğişken yeniden bildirilebilir. Bir değişkeni farklı bir kapsamda veya blokta var ile yeniden bildirmek, dış değişkenin değerini de değiştirir.</p> </li>
-        <li><p><span style="color: red;">let ifadesi, </span>blok kapsamı olan bir değişken bildirmenizi sağlar. let İle bildirilenbir değişken, aynı blok veya aynı kapsam içinde yeniden bildirilemez. Bir değişkeniletfarklı bir kapsam veya blokta yeniden bildirmek, o değişkeni farklı bir değişken olarak ele alır . Dış değişkenin değeri değişmez. </p> </li>
-        <li><p><span style="color: red;">const ifadesi, </span>const değişkenler,  Yeniden atanmalarına izin verilmez. Değişmez, JavaScript'te sayılar ve dizeler gibi ilkel değerler de değişmez olduğundan, referansın değiştirilemeyeceği anlamına gelir. Ve bunu bildirirken değişkeni bir başlangıç ​​değeriyle başlatmanız gerekir. </p> </li>
-        
+      <li><p><span style="color: red;">Script </span>dosyası etiketleri, HTML sayfasının<body>,<head>bölümlerine veya her ikisinede eklenebilir</p> </li>
+      <li><p><span style="color: red;">js </span>JavaScript dosyalarının dosya uzantısı js.'dir</p> </li>
+      <li><p><span style="color: red;">Consolu açma kısayolları: </span>F12klavyeye basın veya klavyede CTRL+ SHIFT+ tuşlarına basın "I" veya Sayfaya sağ tıklayın ve incele'yi seçin</p> </li>
+      <li><p><span style="color: red;">Yorum, Comments </span>● çift eğik çizgiden sonra tek satırlık yorumlar //
+          ● ve /* ile */ arasında çok satırlı yorumlar</p> </li>
+      <li><p><span style="color: red;">JavaScript is case sensitive.</span>JavaScript büyük/küçük harf duyarlıdır. Bu, myNumber, mynumber veya MYNUMBER değişkenlerinin aynı değişkenler olmadığı anlamına gelir. Hepsi farklı değişkenlerdir.</p> </li>
+      <li><p><span style="color: red;">Atama her zaman sağdan sola gider.</span></p> </li>
+      <li><p><span style="color: red;">Değişkenler için isim tanımlamanın genel kuralları</span> İsimler harf, rakam, alt çizgi ve dolar işaretlerinden oluşabilir.
+          ➤ İlk karakter olarak sayılara izin verilmez.
+          ➤ İlk karakter;
+             ● bir harf
+              ● bir alt çizgi ( _ )
+              ● bir dolar işareti ( $ )  Ayrılmış kelimeler isim olarak kullanılamaz</p> </li>
+      <li><p><span style="color: red;">var ifadesi, </span>İle bildirilen birdeğişken yeniden bildirilebilir. Bir değişkeni farklı bir kapsamda veya blokta var ile yeniden bildirmek, dış değişkenin değerini de değiştirir.</p> </li>
+      <li><p><span style="color: red;">let ifadesi, </span>blok kapsamı olan bir değişken bildirmenizi sağlar. let İle bildirilenbir değişken, aynı blok veya aynı kapsam içinde yeniden bildirilemez. Bir değişkeniletfarklı bir kapsam veya blokta yeniden bildirmek, o değişkeni farklı bir değişken olarak ele alır . Dış değişkenin değeri değişmez. </p> </li>
+      <li><p><span style="color: red;">const ifadesi, </span>const değişkenler,  Yeniden atanmalarına izin verilmez. Değişmez, JavaScript'te sayılar ve dizeler gibi ilkel değerler de değişmez olduğundan, referansın değiştirilemeyeceği anlamına gelir. Ve bunu bildirirken değişkeni bir başlangıç ​​değeriyle başlatmanız gerekir. </p> </li>
 
     </ol>
-    <!-- <script>
+
+    <script>
         console.log('hello world');
-    </script> -->
-    <!-- Bu şekilde consolda gözükür. -->
-    <!-- <script>
+    </script>
+    <!-- script etiketleri arasında JS'i HTML sayfasında da kullanbiliriz. Bu şekilde consolda gözükür. -->
+
+    <script>
         document.write('hello world');
-    </script> -->
+    </script>
     <!-- Bu şekilde tarayıcıda gözükür. -->
+
     <!-- <script>
         window.alert('hello world');
     </script> -->
@@ -47,7 +68,9 @@
           a multi-line 
           comment*/
       </script> -->
-    
-    
-</body>
+
+
+
+    <script src="./01_Login_Variables.js"></script>
+  </body>
 </html>
