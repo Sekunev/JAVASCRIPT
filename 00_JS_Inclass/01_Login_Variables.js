@@ -228,10 +228,11 @@ val = Number([1,2,3]); // NaN Not An Number döner. array ifade int'e çevrileme
 val = parseInt('10')  // tamsayı döner.
 val = parseFloat('10.5')  // float döner.
 
+
 console.log(val)
 console.log(typeof val)
 console.log(val.toFixed(2))
-
+//toFixed virgülden sonra kaç basamak yazılacağını ifade eder.
 
 
 // str --> int'e çevirme.
@@ -252,7 +253,7 @@ console.log(x)
 
 
 
-
+console.log('uygulama')
 let sinav_notu = 70;
 let basarilimi = (sinav_notu >= 50)
 
