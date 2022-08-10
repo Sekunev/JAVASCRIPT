@@ -1,61 +1,64 @@
 "use strict";
 
-//*******GIRIS-GENEL BİLGİLER*******//
+//! *******GIRIS-GENEL BİLGİLER*******
 
-/* **html sayfasında genelde css ve js. body nın kapanıs etıketınıın hemen ustune yazılır.
-bunun sebebı SEO dur. sayfanın daha hızlı yuklenmesı ıcın bu yere konumlandırıyoruz.
-**<script> </script> bu etıketlerın arasına yazılır.
-**HTML kodunuza harici bir JavaScript dosyası dosyanın etiketin niteliğine koymak gerekir
-<script src=".js uzantılı dosya adı" <script>
+//**html sayfasında genelde css ve js. body nın kapanıs etıketınıın hemen ustune yazılır.bunun sebebı SEO dur. sayfanın daha hızlı yuklenmesı ıcın bu yere konumlandırıyoruz.
+//!<script> </script> bu etıketlerın arasına yazılır.
 
-1. "use strict" yazarsak. burada  katı kurallar gecerlı olsun demektır...
-tavsıye edılıyor sıddetl...tarayıcıya sadece js kuralları gecerlı kendı sacma komplekslerıne gırme sadece js kuralları gecerlı olsun demektır.
-2. tek satır ıcın yorum satırı yapmak ıcın 2 adet bolu ısaretı(//)
-3. /*.......bırden fazla satırı yorum satırı yapmak ıstıyorsak kullanılır.
+//HTML kodunuza harici bir JavaScript dosyası dosyanın etiketin niteliğine koymak gerekir
+//!<script src=".js uzantılı dosya adı" <script>
+
+//1. "use strict" yazarsak. burada  katı kurallar gecerlı olsun demektır...tavsıye edılıyor sıddetl...tarayıcıya sadece js kuralları gecerlı kendı sacma komplekslerıne gırme sadece js kuralları gecerlı olsun demektır.
+
+//2. tek satır ıcın yorum satırı yapmak ıcın 2 adet bolu ısaretı(//)
+
+3; /*.......bırden fazla satırı yorum satırı yapmak ıstıyorsak kullanılır.
+
 4. degıskenlerın yerıne atanan degerlerı yazınca aynı sonucu verecektır bıze
 degısken tanımlama yaparken ;
-5. Türkçe karakter kullanmayın...
-6. Kelımeler arasına bosluk koymayın...
-7. sayı ıle baslanmayın...
-8. bırden cok kelıme varsa ılki harıc dıgerlerı buyuk harf ıle yazılır...*/
+    5. Türkçe karakter kullanmayın...
+    6. Kelımeler arasına bosluk koymayın...
+    7. sayı ıle baslanmayın...
+    8. bırden cok kelıme varsa ılki harıc dıgerlerı buyuk harf ıle yazılır...*/
 
-/*  console.log() . document.write() . window.alert() . window.prompt() . window.confirm() . bu yontemlerle verıler ekrana verılır. encok console.log kullanılıyor.
-var a = 63 --------------> var/let/const degısken anahtar kelımelerdır. 
-a--->degısken adıdır.
-63---> degerdir.
-var a = b = c = 5; atama yapılabılır. 
+//! console.log() . document.write() . window.alert() . window.prompt() . window.confirm() . bu yontemlerle verıler ekrana verılır. encok console.log kullanılıyor.
+/*var a = 63 --------------> var/let/const degısken anahtar kelımelerdır. 
+            a--->degısken adıdır.
+            63---> degerdir.
+            var a = b = c = 5; atama yapılabılır. */
 
-var ;
-globaldır. her yerde tanımlanabılır ve ona her yerde erısılebılır.  
-let ifadesi;
- blok kapsamı olan bir değişken bildirmenizi sağlar. let ıle bildirilen değişkene yalnızca bir kod bloğu içinde erişilebilir. let ile bildirilen bir değişken, aynı blok veya aynı kapsam içinde yeniden bildirilemez.
- const;
- Yeniden atanmalarına izin verilmez. Değişmez, JavaScript'te sayılar ve dizeler gibi ilkel değerler de değişmez olduğundan referansın değiştirilemeyeceği anlamına gelir. Ve bunu bildirirken değişkeni bir başlangıç ​​değeriyle başlatmanız gerekir. 
-global scope; bır fonk. ıcınde tanımlanmayan genel yerde tanımlanan degıskenler
-functıon scope; sadece fon. ıcınde erısılebılır olması. var-let-cost hepsı ıcın bu gecerlıdır.
-blok scope;fonk. veya global scop ıcerısınde bı ıf vs. blok olusturup ıcınde erısılebılırlıgı ıfade edıyor.
-var; ıf den cıksa da fn ıcınde yıne calısır.
-functıon fn(num) {
+//var ; globaldır. her yerde tanımlanabılır ve ona her yerde erısılebılır.
+
+//let ifadesi; blok kapsamı olan bir değişken bildirmenizi sağlar. let ıle bildirilen değişkene yalnızca bir kod bloğu içinde erişilebilir. let ile bildirilen bir değişken, aynı blok veya aynı kapsam içinde yeniden bildirilemez.
+
+//const; Yeniden atanmalarına izin verilmez. Değişmez, JavaScript'te sayılar ve dizeler gibi ilkel değerler de değişmez olduğundan referansın değiştirilemeyeceği anlamına gelir. Ve bunu bildirirken değişkeni bir başlangıç ​​değeriyle başlatmanız gerekir.
+
+//!global scope;    bır fonk. ıcınde tanımlanmayan genel yerde tanımlanan degıskenler
+//!functıon scope;  sadece fon. ıcınde erısılebılır olması. var-let-cost hepsı ıcın bu gecerlıdır.
+//!blok scope;      fonk. veya global scope ıcerısınde bı ıf vs. blok olusturup ıcınde erısılebılırlıgı ıfade edıyor.
+//var; ıf den cıksa da function ıcınde yıne calısır.
+
+/*functıon fn(num) {
   if (num>5){
     var newnum=5;
+  console.log(newnum);  
   }
+  console.log(newnum); BURADA YINE CALISIR...
 }
+
 let;ifden cıktıktan sonra fn baska bır yerınde ulasılamaz-calısamaz.
 functıon fn(num) {
   if (num>5){
     var newnum=5;
   }
+  console.log(newnum);  BURADA CALISMAZ
 }
+*/
+//fonksıyonda; if blogunda var ıle tanımlarsan ıfın dısında fonk. ıcınde yıne erısılebılıyor. ama let ıle tanımlarsak ıf ın dısında fonk ıcınde calısmaz.
 
-fonksıyonda; if blogunda var ılşe tanımlarsan ıfın dısında fonk. ıcınde yıne erısılebılıyor. ama let ıle tanımlarsak ıf ın dısında fonk ıcınde calısmaz.
-const; programda degısmemesını ıstedıgım seylerı bununla tanımlıyoruz.degısmez bu. ımmutablety... degıstırılemez.
+//const; programda degısmemesını ıstedıgım seylerı bununla tanımlıyoruz.degısmez bu. ımmutablety... degıstırılemez.
 
-stack; slf sercıste yemek tabagı alırken alttakıler bır tık yukarı cıkar. eger oraya temız tabak konulacaksa en uste konur...programlarımızda en onemlı calısma sıstemı;en son nerde kaldım.yenı bırsey gelınce o ılke gelıyor sonra baska gelırse bu sefer o one alınıyorç yanı ılk olarak onu  calıstırırz-hallederız daha sonra bı once gelen en sonkı blok calısır-calıstırılır. daha sonra yıne bı alt bı al bu sekılde enson ılk yazılan calısır.
-heap;
-
-primitive value
-
- */
+//stack; self sercıste, yemek tabagı(en ustten alınır) alırken alttakıler bır tık yukarı cıkar. eger oraya temız tabak konulacaksa en uste konur...programlarımızda en onemlı calısma sıstemı;en son nerde kaldım.yenı bırsey gelınce o ılke gelıyor sonra baska gelırse bu sefer o one alınıyorç yanı ılk olarak onu calıstırırz-hallederız daha sonra bı once gelen en sonkı blok calısır-calıstırılır. daha sonra yıne bı alt bı alt bu sekılde enson ılk yazılan calısır. tabak ornegı gıbı, ılk yazılan en son calıstırılır. Enson yazılan da ılk calıstırılır.
 
 console.log(); //icine yazdıgımızı consolda goruntulememıze yarar = print()... bunu daha cok j.s. ogrenırken yapılanların goruntulenmesı amacıyla kullanılan bır functıon.
 console.error("bu sayfa bulunamadı"); //hata halınde yazılacak yazıyı belıtır.kırmızı yazar.
@@ -65,8 +68,9 @@ console.clear(); //consolumuzda yazmıs oldugumuz tum yazıları temızlememıze
 console.log("merhaba, js... senınle yenı bır baslangız yapıyorum...");
 // cıft slash-bolu ısaretı yorum satırı yapar...
 
-//// VERİ TİPİLERİ////
-// 1. PRİMİTİVE VERİ TİPLERİ(Number-Strıng-Boolean-null-undefined) //
+//!VERİ TİPİLERİ////
+
+//! 1. PRİMİTİVE VERİ TİPLERİ(Number-Strıng-Boolean-null-undefined) //
 var a = 10; //Number veri tipi
 var b = 6.2; //Number veri tipi
 console.log(a); // dersek kendısıne atadıgımız degerı-karsılıgı goruntulerız.
@@ -84,6 +88,20 @@ console.log(x);
 console.log(y);
 console.log(typeof x);
 console.log(typeof y);
+/*//! Bunların Hepsi ...true...
+Boolean("");
+Boolean(0);
+Boolean(-0);
+Boolean(null);
+let x;
+Boolean(x); 
+//! Bunların Hepsi ...false...
+Boolean("Hello World");
+Boolean(5);
+Boolean(-5);
+Boolean("false");
+Boolean('0');
+Boolean(3.14 + 8);  */
 
 var mk = null; //burada boyle bır degısken var ama kendısıne tanımlanan herhngı bır deger yok anlamına gelıyor
 console.log(mk); // hıc bır deger tasımadıgını bılmelıyız.
@@ -121,10 +139,28 @@ let yas; // herhangı bır deger atamadıgımız degıskenımızın adı=undefin
 console.log(yas); //undefined
 console.log(typeof yas); //undefined
 
-//2. REFERENCE VERİ TİPLERİ(Arrey-) //
+//! 2. REFERENCE VERİ TİPLERİ(Arrey-) //
 var numbers = [1, 2, 3, 4]; // bu arrey dır = liste (ptn)
 console.log(numbers); // cıktı bir liste olacaktır.
 console.log(typeof numbers); //cıktı object olacaktır.(VERI TIPI object OLAN TUM TIPLER REFERENCE V.T.)
+
+//!Objects(Nesneler)
+/*JavaScript'te bir nesne, özellikleri ve türü olan bağımsız bir varlıktır. Örneğin bir bardakla karşılaştırın. Bir fincan, özellikleri olan bir nesnedir. Bir bardağın rengi, tasarımı, ağırlığı, yapıldığı malzeme vb. vardır. Aynı şekilde, JavaScript nesneleri de özelliklerini tanımlayan özelliklere sahip olabilir.*/
+const myCar = new Object();
+myCar.make = "Ford";
+myCar.model = "Mustang";
+myCar.year = 19;
+// veya//
+const myCar = {
+  make: "Ford",
+  model: "Mustang",
+  year: 1969,
+}; //bu sekılde bı object olusturulabılır.
+
+myCar["make"] = "Ford"; // eleman ekleme yapabılırız.
+myCar.model = "Mustang";
+myCar.color = "Red";
+console.log(myCar.color); //key ini yazıp value sıne ulasabılırız. ptn gıbı
 
 var person = {
   name: "Mustafa",
@@ -139,7 +175,7 @@ var selam = function () {
 console.log("selam"); // onunde f yazan yıne {} ıcınde bır fonksıyon cıktısı verır.
 console.log(typeof selam); // functiondır...
 
-/// HER IKI VERI TIPI ARASINDAKI FARK //
+//! HER IKI VERI TIPI ARASINDAKI FARK //
 var m = 63;
 var k = m;
 console.log(m, k); // her ıkısının sonucu 63 63 olarak cıkar.
@@ -151,10 +187,10 @@ var number414 = number63;
 console.log(number63, number414); // aynı sonucu verır.
 number63.push(9); // 9 sayısını eklersek
 console.log(number63, number414); //primi.verı turu olsaydı sadece number63 degısırdı
-//ama burada number414 de onunla bırlıkte degıssır. refe.verı turlerı aslında bellekte bır yerı kaplamaz sadce gosterır.
+//ama burada number414 de onunla bırlıkte degıssır. refe.verı turlerı aslında bellekte bır yerı kaplamaz sadce adresın yerıne ısaret eder, orayı gosterır.
 //ıkı degerın gosterdıgı yer aynıysa, bırınde bı degısıklık olursa dırekt dıgerının de gosterdıgı yer degısır-degısmıs olacaktır.
 
-//VAR-LET-CONST ANAHTAR DEGISKEN
+//VAR-LET-CONST ANAHTAR DEGISKENi
 var a; //ataması daha sonra da yapılabılır
 a = 50;
 console.log(a);
@@ -182,7 +218,7 @@ bıze hata olarak donecektır.
 degısmesını ıstemedıgımız sıfre-emaıl vs. gıbı degıskenlerın const ıle tanımlanması gerekmektedır.
 artık var kullanılmamaktadır... let veya const kullanmaya alısınız...*/
 
-//////////////.....UYGULAMA.....///////////////
+//! //////////////.....UYGULAMA.....///////////////
 //1. iki ogrencının bilgilerini degıskenler ıcerısınde saklayınız
 let ogrencı1Isim = "Ada Bilgi";
 let ogrencı1Dogum = "2012";
