@@ -1,41 +1,47 @@
 let sonuc;
+
+// !aritmetik operatörler 
 let a = 10, b = 20, c =30;
-// aritmetik operatörler 
 
 sonuc = a + b;
 sonuc = a - b;
 sonuc = a * b;
 sonuc = a / b;
-sonuc = a % b;
-sonuc = a++;  // a yı yazdır sonra 1 artır
-sonuc = ++a;  // a'yı 1 artır sonra yazdır.
-sonuc = a--;  // a yı yazdır sonra 1 eksilt
-sonuc = --a;  // a'yı 1 eksilt sonra yazdır.
+sonuc = a % b; //bolum sonucunda kalan.
+sonuc = a++;  // a'yı yazdır sonra 1 artırarak sonuca ata.
+sonuc = ++a;  // a'yı 1 artır sonra sonuca ata.
+sonuc = a--;  // a yı yazdır sonra 1 eksilterek sonuca ata.
+sonuc = --a;  // a'yı 1 eksilt sonra sonuca ata.
 
 
-// atama operatörleri
+// !atama operatörleri
 sonuc = a
 sonuc += a // sonuc = sonuc + a;
-sonuc -= a 
-sonuc *= a 
-sonuc /= a 
+sonuc -= a // sonuc = sonuc - a 
+sonuc *= a // sonuc = sonuc * a 
+sonuc += a + b; // sonuc = sonuc + a + b
+sonuc /= a // sonuc = sonuc / a 
+
 sonuc %= a  // sonuç = sonuç %a;
 
 
-// // Karşılaştırma operatörleri
-sonuc = (a==b)
-sonuc = (a!=b)
-sonuc = (a!==b)  // Tip Kontrolü yapabiliriz.
+// !Karşılaştırma operatörleri
+sonuc = (a==b) // a,  b ye esıt mıdır dıye sorar ve cevap olarak (true-false) olarak doner.
+sonuc = (a!=b) // a,  b ye esıt degıl mıdır dıye sorar ve cevap olarak (true-false) olarak doner.
+sonuc = a === b; // a,  b ye esıt mıdır ve "typeof"(verı turu) u aynı mıdır. dıye sorar ve cevap olarak (true-false) olarak doner.
+sonuc = (a!==b)  // "a b'ye'esıt ve türü de aynı degıl mı? dıye soru soruyor.
 sonuc = (a > b)
 sonuc = (a <= b)
 sonuc = (3 === '3')  // 3 eşit işareti değer ve tip kontrolü yapar. bu örnekte aynı tür olmadığı için False döner.
 
-// Mantıksal Operatörler
+// !Mantıksal Operatörler
 // && (And)
 sonuc = (a > b) && (a>c)
+// ?Tum kosulların true olması grekır kı sonuc true olsun
 
 // || (Or)
 sonuc = (b > a) || (a > c)
+// tum kosullarda false cıkmalı kı sonuc false olsun yoksa bır tane bıle true gorurse sonuc true olacaktır.
 
 // ! (Not)
 
