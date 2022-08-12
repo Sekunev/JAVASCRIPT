@@ -74,57 +74,54 @@ console.log(sonuc);
 // {}(boş bir nesne)
 // function(){}("boş" bir function)
 
-
 //!Nullish Birleştirme Operatörü (??)
 // Boş birleştirme operatörü (??), sol taraftaki işleneni boş(null) veya tanımsız(undefıned) olduğunda, sağ taraftaki işleneni; aksi halde sol taraftaki işleneni döndüren mantıksal bir operatördür.
 // value1 ?? value2
 // İkinci (değer2) boş(null) veya tanımsız(undefined), boş birleştirme operatörü ilk değeri (değer1) döndürür. Teknik olarak, boş birleştirme operatörü aşağıdaki bloğa eşdeğerdir:
 
-const result = value1;
-if (result === null || result === undefined) {
-  result = value2;}
+// const result = value1;
+// if (result === null || result === undefined) {
+//   result = value2;}
 
+//   let count = 0;
+// let result = count || 1;
+// console.log(result); // 1
+// // desired result should be 0, therefore using coalescing operator is a better choice
+// let count2 = 0;
+// let result2 = count2 ?? 1;
+// console.log(result2);
 
-  let count = 0;
-let result = count || 1;
-console.log(result); // 1
-// desired result should be 0, therefore using coalescing operator is a better choice
-let count2 = 0;
-let result2 = count2 ?? 1;
-console.log(result2);
+// Boş birleştirme operatörü, bu tuzaktan kaçınmanıza yardımcı olur. Yalnızca birincisi boş veya tanımsız olduğunda ikinci değeri döndürür.
 
-Boş birleştirme operatörü, bu tuzaktan kaçınmanıza yardımcı olur. Yalnızca birincisi boş veya tanımsız olduğunda ikinci değeri döndürür.
+// ➤ Boş birleştirme operatörü kısa devredir Mantıksal OR ve AND operatörlerine benzer şekilde, boş birleştirme operatörü, ilk işlenen ne tanımsız ne de boş değilse ikinci değeri değerlendirmez.
 
-➤ Boş birleştirme operatörü kısa devredir Mantıksal OR ve AND operatörlerine benzer şekilde, boş birleştirme operatörü, ilk işlenen ne tanımsız ne de boş değilse ikinci değeri değerlendirmez.
+// ➤ Boş birleştirme operatörü, (||) den doğrudan daha düşük beşinci en düşük operatör önceliğine sahiptir. ve koşullu (üçlü) operatörden doğrudan daha yüksektir. || ile kullanılırsa hata verebilir. ve && operatörleri. Operatör önceliklerini açıkça belirtmek için parantez ile kullanın.
 
-➤ Boş birleştirme operatörü, (||) den doğrudan daha düşük beşinci en düşük operatör önceliğine sahiptir. ve koşullu (üçlü) operatörden doğrudan daha yüksektir. || ile kullanılırsa hata verebilir. ve && operatörleri. Operatör önceliklerini açıkça belirtmek için parantez ile kullanın.
+// const result = null || undefined ?? 'OK'; // SyntaxError
 
-const result = null || undefined ?? 'OK'; // SyntaxError
+// const result2 = (null || undefined) ?? 'OK';
+// console.log(result); // "ok"
 
-const result2 = (null || undefined) ?? 'OK';
-console.log(result); // "ok"
+// ? Nesne özellikleri için boş birleştirme operatörü olan operatörde vardırBir nesne özelliğinin tanımsız olduğu durumlar varsa, alt özelliklere erişmek bir hata verebilir. Aşağıdaki örneğe bakın:
 
-? Nesne özellikleri için boş birleştirme operatörü olan operatörde vardırBir nesne özelliğinin tanımsız olduğu durumlar varsa, alt özelliklere erişmek bir hata verebilir. Aşağıdaki örneğe bakın:
+// const obj = {
+//   a: {
+//     b: { key: 'Some Value' },
+//       },
+//     d:{ key: 'My value',}
+//   };
+// console.log(obj.a.b.key); // 'Some Value'
+// console.log(obj.a.c.key); // error, breaks the execution
+// console.log(obj.a.c?.key); // undefined, does not break the exec
 
-const obj = {
-  a: {
-    b: { key: 'Some Value' },
-      },
-    d:{ key: 'My value',}
-  };
-console.log(obj.a.b.key); // 'Some Value'
-console.log(obj.a.c.key); // error, breaks the execution
-console.log(obj.a.c?.key); // undefined, does not break the exec
+// instanceofnesne türü sorgu operatörü, verilen nesnenin nesne türünü belirlemek için kullanılır.
+// const arr = [1, 2, 3];
+// console.log(arr instanceof Array);// true
 
-instanceofnesne türü sorgu operatörü, verilen nesnenin nesne türünü belirlemek için kullanılır.
-const arr = [1, 2, 3];
-console.log(arr instanceof Array);// true
+// deletebir nesnenin özelliğini veya bir dizinin bir öğesini siler
+// ? : Üçlü Operatör bir sonraki bölümde ele alınacaktır.
+// const user = { fullName: "John Doe", age: 40}
+// delete user.age; // user = { fullName: "John Doe"}
 
-deletebir nesnenin özelliğini veya bir dizinin bir öğesini siler
-? : Üçlü Operatör bir sonraki bölümde ele alınacaktır.
-const user = { fullName: "John Doe", age: 40}
-delete user.age; // user = { fullName: "John Doe"}
-
-,Virgül İşleci, birden çok işleneni değerlendirir ve son işlenenin değerini döndürür.
-let a = (1, 3, 7); // 7
-
+// ,Virgül İşleci, birden çok işleneni değerlendirir ve son işlenenin değerini döndürür.
+// let a = (1, 3, 7); // 7
