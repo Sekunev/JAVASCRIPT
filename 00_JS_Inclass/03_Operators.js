@@ -172,23 +172,21 @@ ba += ' Developer';  // a = a + ' Developer';
 
 //! --- UYGULAMA ---
 
-// 1. Write a JavaScript code to calculate multiplication and division of two numbers (input from user). : 5min
+// todo 1. Write a JavaScript code to calculate multiplication and division of two numbers (input from user). : 5min
 
 
 // let num1 = +prompt('Enter first number');
 // let num2 = +prompt('Enter second number');
 // console.log(`${num1} x ${num2} is ${num1 * num2}, \n${num1} / ${num2} is ${num1 / num2}`);
 
-/*
- * 2. area calculation: 7min
- * area of any triangle (given only sides) ---
 
- * area of rectangle (given only sides)
- * area of circle (given only radius)
- * perimeter of circle (given only radius)
- *
- * pi sayisi olarak :  Math.PI / 3.141592653589793
- */
+//  todo 2. area calculation: 7min
+// area of any triangle (given only sides) ---
+// area of rectangle (given only sides)
+// area of circle (given only radius)
+// perimeter of circle (given only radius)
+// pi sayisi olarak :  Math.PI / 3.141592653589793
+
 
 // let side1 = +prompt('Enter first side');
 // let side2 = +prompt('Enter second side');
@@ -200,12 +198,12 @@ ba += ' Developer';  // a = a + ' Developer';
 // );
 
 // console.log(`Area of triangle is ${area}, perimeter is ${perimeter}.`);
-/*
-* 3. temperature convertion : 8min
-* celcius to fahrenheit
-* fahrenheit to celcius
 
-*/
+// todo 3. temperature convertion : 8min
+// * celcius to fahrenheit
+// * fahrenheit to celcius
+
+
 
 // let cTemp = +prompt('Enter celcius temperature');
 // const cToFahr = (cTemp * 9) / 5 + 32;
@@ -215,12 +213,12 @@ ba += ' Developer';  // a = a + ' Developer';
 // const fToCel = ((fTemp - 32) * 5) / 9;
 // console.log(`${fTemp}°F equals  ${fToCel.toFixed(2)}°C`);
 
-/*
- * 4. print today's date separately :8min
- * day of month is 11
- * month of year is 8
- * year is 2022
- */
+
+//  todo 4. print today's date separately :8min
+//  * day of month is 11
+//  * month of year is 8
+//  * year is 2022
+ 
 // const today = new Date();
 // console.log(today);
 
@@ -231,15 +229,14 @@ ba += ' Developer';  // a = a + ' Developer';
 // console.log(`month of year is ${today.getMonth() + 1}`);
 // console.log(`year is ${today.getFullYear()}`);
 
-/*
 
-* 5. check from three given numbers (non negative integers) that two or all of them have the same rightmost digit. : 10min
 
-* 22 32 42 => true
-* 15 24 45 => true
-* 33 34 35 => false
+// todo 5. check from three given numbers (non negative integers) that two or all of them have the same rightmost digit. : 10min
 
-*/
+// * 22 32 42 => true
+// * 15 24 45 => true
+// * 33 34 35 => false
+
 
 /*
 stage is yours
