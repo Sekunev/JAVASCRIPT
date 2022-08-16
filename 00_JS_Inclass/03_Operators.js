@@ -244,10 +244,10 @@ There are at least 2 numbers having same first digit: true/false
 
 */
 
-let p = +prompt('Enter first number');
-let q = +prompt('Enter second number');
-let r = +prompt('Enter third number');
+// let p = +prompt('Enter first number');
+// let q = +prompt('Enter second number');
+// let r = +prompt('Enter third number');
 
-const result = p % 10 === q % 10 || p % 10 === r % 10 || q % 10 === r % 10;
+// const result = p % 10 === q % 10 || p % 10 === r % 10 || q % 10 === r % 10;
 
-console.log(`There are at least 2 numbers having same first digit: ${result}`);
+// console.log(`There are at least 2 numbers having same first digit: ${result}`);

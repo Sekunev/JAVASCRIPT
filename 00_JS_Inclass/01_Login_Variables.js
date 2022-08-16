@@ -18,6 +18,8 @@
 // let firstName = prompt('Enter your name:');
 // firstName isminde bir değişken atadık. promt metodu ile tarayıcı uyarı şeklinde karşımıza çıkardı. Promt aslında HTML'deki form işlevini yürüttü. bilgi girişi sağlamış oldu.
 
+// ?let sayı2 = prompt('2. sayı', 5)  // 2. parametre girildiğinde bu değer default değer olur. kullanıcı isterse değiştirebilir.
+
 // alert('firstName :' + firstName);
 //alert ile de prompt'la kullanıcıdan aldığımız veriyi ekrana yazdırdık.
 
