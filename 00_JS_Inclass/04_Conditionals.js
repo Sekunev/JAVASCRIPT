@@ -228,12 +228,40 @@
 // console.log(`m - n : ${m - n} `);
 // console.log(`m x n : ${m * n} `);
 // console.log(`m / n : ${m / n} `);
+
 // // 2. Yöntem:
+
 // const islem = prompt('Lütfen işlem türüni giriniz.');
 // if (islem === "+") {console.log(`m + n : ${m + n} `)}
 // if (islem === "-") {console.log(`m - n : ${m - n} `)}
 // if (islem === "*") {console.log(`m * n : ${m * n} `)}
 // if (islem === "/") {console.log(`m / n : ${m / n} `)}
+
+// 3. Yöntem
+
+// const s1 = Number(prompt("1.Sayiyi Giriniz:"));
+// const islem = prompt("Islemi giriniz: +,-,*, /");
+// const s2 = +prompt("2.Sayiyi Giriniz:");
+// let netice = 0;
+// switch (islem) {
+//   case "+":
+//     netice = s1 + s2;
+//     break;
+//   case "-":
+//     netice = s1 - s2;
+//     break;
+//   case "*":
+//     netice = s1 * s2;
+//     break;
+//   case "/":
+//     netice = s1 / s2;
+//     break;
+//   default:
+//     alert("Yanlis islem girisi");
+//     break;
+// }
+// console.log(`${s1} ${islem} ${s2} = ${netice}`);
+
 
 // # ODEV2 :Clarusway’deki haftalık ders ve etkinlik programınızı, console’dan girilen gün değerine göre çıktı veren kodu switch-case yapısı ile yazınız.
 
@@ -252,14 +280,8 @@
 
 // switch (gun) {
 //     case 'pazartesi':
-//     etkinlik = "InClass";
-//     break;
 //     case 'salı':
-//     etkinlik = "InClass";
-//     break;
 //     case 'çarşamba':
-//     etkinlik = "InClass";
-//     break;
 //     case 'perşembe':
 //     etkinlik = "InClass";
 //     break;
@@ -277,9 +299,10 @@
 // }
 // console.log(etkinlik); 
 
+
 // ODEV3:Maasi asgari ucretten az olanlara %50 zam,fazla olanlara ise %10 zam yapmak istiyoruz.
 
-// let maas = prompt('Maaşı giriniz.')
+// let maas = Number(prompt('Maaşı giriniz.'))
 // let aUcret = 6471;
 
 // if (maas < aUcret) {console.log(`Maaşınız asgari ücretin altında olduğu için %50 zam hakkı kazandınız. Güncel maaş miktarınız: ${(maas*1.5).toFixed(2)}`);}
@@ -298,7 +321,9 @@
 // const gelir = +prompt('Aylık Gelirinizi Giriniz');
 // const gider = +prompt('Aylık Giderinizi Giriniz');
 // let aUcret = 6471;
-// console.log((gelir >= gider + aUcret) ? 'Kredi verilebilir' : 'Kredi verilemez')
+// console.log((gelir >= gider + aUcret) ? 'Kredi verilebilir 🤑' : 'Kredi verilemez 🥺')
+
+// ***! Noah hoca slayt sonu soruları ***
 
 // Soru-1: Girilen not değerine karşılık gelen harfli notu bildiren programı yazınız. • 0-25 arası not karşılığı FF olmalı,26-45 arası DD, 46-65 arası CC, 66- 75 arası BB, 76-
 // 90 arası BA, 91-100 arası AA olarak çevrilmelidir. • 100’den büyük veya 0‘dan küçük değerlerde hata mesajı verecektir.
