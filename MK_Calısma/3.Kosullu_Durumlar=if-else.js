@@ -1,3 +1,16 @@
+//!İf-Else if Kosullu Durumlar///
+/*
+Bir koşul ise, bir eylem gerçekleştirilebilir ve koşul ise başka bir eylem gerçekleştirebilirsiniz.
+JavaScript'te3 tür Koşullu İfade vardır:
+1. if-else ifade
+2. Ternary yapısı ifadesi
+3. switch statement
+
+
+
+
+*/
+
 console.log("merhaba if-else konusuna hosgeldınız");
 // bu yazıyı bellı bır kosula baglayarak yazdırdmak ısteyebılırız. kosulumuz gerceklesırse bu yazıyı-code blogunu calıstır dıyebılırız.
 
@@ -18,12 +31,12 @@ if (username == "mk") {
 } else {
   console.log("gırıs yapılamadı. username yanlıs gırıldı");
 }
-//////YUKARIDA UZUN SEKILDE DEGIL DE MANTIKSAL OPERATORLERIYLE DAHA KISA YAZALIM///////
+//! ////YUKARIDA UZUN SEKILDE DEGIL DE MANTIKSAL OPERATORLERIYLE DAHA KISA YAZALIM///////
 //1. Not operatoru ---> ! ısaretıyle ıfade edılır. onune geldıgı trueyu false;falseu true ya cevırıyor
-//2. and ---> &&(shift+6) isaretıyle ıfade edılır.(true, true = true ///// true, false = false)
-//3. or ---> || (Alt Gr+Ctrl+<|> tusu)isaretıyle ıfade edılır.(true, true = true ///// true, false = false
+//2. and ---> &&(shift+6) isaretıyle ıfade edılır. hepsı true olursa en sondakı true degerı doner... sadece bır tane bıle false olursa sonuc ılk falsyı deger olur...//! ///(true, true = true ---- true, false = false)
+//3. or ---> || (Alt Gr+Ctrl+<|> tusu)isaretıyle ıfade edılır. tamamı false olursa en sonkı false deger doner... sadece bır tane bıle true olsa ılk truety degerı doner. //! ///(true, true = true ---- true, false = false
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//! //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const islem = 1; // islem =true -false dıye yazılarak da kontroller yapılabılır.
 if (islem === 1) {
@@ -40,7 +53,10 @@ if (islem === 1) {
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Ternary Operatoru//
-//yukarıda yazmıs oldugumuz if - else kod blogunu daha kısaca yazma yontemıdır. dıkkat edın sadece bır islem yapılması halınde bunu kullanabılırsınız
+/*yukarıda yazmıs oldugumuz if - else kod blogunu daha kısaca yazma yontemıdır. dıkkat edın sadece bır islem yapılması halınde bunu kullanabılırsınız
+Genellikle bir sonuç elde etmek için basit karşılaştırmalarda kullanılır. Üçlü bloklar iç içe yerleştirilebilir, ancak kodunuzun anlaşılmasını zorlaştırdığı için önerilmez. 
+//! condition ? expression1 : expression2
+ burada  condıtıons(sartımız) true donerse : nın sol tarafundakı expression1; false donerse expression2 doner.*/
 
 const hesap = 100;
 if (hesap === 100) {
@@ -59,7 +75,7 @@ console.log(hesap === 100 ? "hesap dogrulandı" : "hesap dogrulanmadı...HATA.."
 if (hesap === 1400) console.log("hesap dogrulandı");
 else console.log("hesap dogrulanmadı...HATA...");
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//! ///////////////////////////////////////////////////////////////////////////////////////////
 //Switch Yontemi//
 /* aslında bu yondem if-else ın yapmıs oldugu goreyı yapıyor. bazı yerlerde bunun kullanılması daha faydalı olacaktır.;
 1. bır degıskenı switch ıcıne yazıyoruz.
@@ -68,7 +84,7 @@ else console.log("hesap dogrulanmadı...HATA...");
 4. her bır case sonuna mutlaka break ı yazmamız gerekıyor. 
 yoksa kural geregı sartı saglayan case altındakı kod blogunu calıstırsa da,
 switch kuralı geregı devamındakı case kod bloklarını da calıstırır
-NOT: Yanı bu yontemde tum caseler tek tek yazdırılır. ta kı break anahtar kelımesını kullanana kadar.
+NOT: Yanı bu yontemde tum caseler tek tek kontrol edılır, true olan deger tespıt edıldıgı andan ıtıbaren yazdırılmaya baslanır ta kı break anahtar kelımesını kullanana kadar.
 Bu yuzden her bır case sonrası break kelımesı kullanılmalıdır. default sonunda kullanılmasa da onemlı degıl.
 zıra switch bıtmıs oluyor. */
 
