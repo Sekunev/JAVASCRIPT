@@ -19,14 +19,9 @@
 // console.log(`sayı1 ve sayı2'nin toplamı ${sayı1+sayı2}`);
 
 // let sayı1 = +prompt('1. kenar')
-// let sayı2 = +prompt('2. kenar') 
+// let sayı2 = +prompt('2. kenar')
 
 // console.log(`dikdörtgenin alanı ${sayı1*sayı2}, çevresi ${2*(sayı1+sayı2)}`);
-
-
-
-
-
 
 // let sayı1 = parseInt(prompt('1. sayı'))
 
@@ -35,15 +30,15 @@
 // }else{console.log('3ün katı değildir.')}
 
 // let sayı = +prompt('Bir sayı giriniz');
-// console.log(typeof sayı); 
-// console.log(sayı); 
+// console.log(typeof sayı);
+// console.log(sayı);
 
 // if (sayı >= 0) {
 //     if (sayı == 0) {
 //         console.log('sayı 0');
 //     }
 //     else {
-//         console.log('Sayı pozitif');  
+//         console.log('Sayı pozitif');
 //     }
 // } else {
 //     console.log('Negatif');
