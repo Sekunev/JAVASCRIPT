@@ -149,8 +149,7 @@ if (hesap === 100) {
   console.log("hesap dogrulanmadı...HATA...");
 }
 
-/*Ternary:          ? kosul true ıse calıstır (sagındakı kodu)
-                    : kosul false ıse calıstır (sagındakı kodu) */
+/*Ternary:          ? kosul true ıse calıstır (:solundakı kodu) : kosul false ıse calıstır (:sagındakı kodu) */
 
 console.log(hesap === 100 ? "hesap dogrulandı" : "hesap dogrulanmadı...HATA..");
 
