@@ -21,3 +21,4 @@ str1 = str1.concat(str2);
 // her bir degerin arkasina null deger saklanır
 // indexof---> bulamadıgını -1 olarak donderıryor. cunku hıc bır strıngın indis numarası eksı olamaz
 // regular extends (regex).../[] / .....https://www3.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html bakabılırsınız
+//! Medıa Query

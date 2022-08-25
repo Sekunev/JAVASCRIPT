@@ -1,4 +1,4 @@
-.title {
+/* .title {
   /* display: flex; */
   /*align-items: top;*/
   justify-content: center;
@@ -37,4 +37,45 @@ body {
   background: linear-gradient(to top left, #5e0674, #c0ceee);
   display: block;
   justify-content: center;
+} */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: aqua;
+  font-weight: 500;
+  margin: 1rem;
+}
+h1{
+  background-color: red;
+  width: 20rem;
+  padding: 1rem;
+  border: 1px solid  black;
+  border-radius: 30px;
+  text-align: center;
+  margin: 2rem auto;
+}
+.header{
+  background-color: rgb(24, 209, 24);
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+/* css vıewer https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce?hl=en */
+
+.navbar{
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(13, 27, 150);
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+.navbar a:hover{
+  background-color: rgb(207, 193, 193);
 }
