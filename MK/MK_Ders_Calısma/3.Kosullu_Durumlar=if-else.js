@@ -4,12 +4,11 @@ Bir koşul ise, bir eylem gerçekleştirilebilir ve koşul ise başka bir eylem 
 JavaScript'te3 tür Koşullu İfade vardır:
 1. if-else ifade
 2. Ternary yapısı ifadesi
-3. switch statement
+3. switch statement*/
 
-
-
-
-*/
+//* boylece yesıl olarak yazar
+//?mavı yazar
+//! kırmızı yazar
 
 console.log("merhaba if-else konusuna hosgeldınız");
 // bu yazıyı bellı bır kosula baglayarak yazdırdmak ısteyebılırız. kosulumuz gerceklesırse bu yazıyı-code blogunu calıstır dıyebılırız.
@@ -30,6 +29,15 @@ if (username == "mk") {
   }
 } else {
   console.log("gırıs yapılamadı. username yanlıs gırıldı");
+}
+///?ornek: gırılen sayının pozıtıf negatıf olup olmadıgını kontrol eden  kodu yazınız??
+const sayim = prompt("lütfen bir sayi giriniz: ");
+if (sayim > 0) {
+  console.log(`${sayim} pozitiftir.`);
+} else if (sayim < 0) {
+  console.log(`${sayim} negatiftir.`);
+} else {
+  console.log(`${sayim} 0'a esittir.`);
 }
 //! ////YUKARIDA UZUN SEKILDE DEGIL DE MANTIKSAL OPERATORLERIYLE DAHA KISA YAZALIM///////
 //1. Not operatoru ---> ! ısaretıyle ıfade edılır. onune geldıgı trueyu false;falseu true ya cevırıyor

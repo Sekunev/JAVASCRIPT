@@ -4,6 +4,7 @@ const a = Number(prompt("bır sayi giriniz: "));
 console.log(a);
 console.log(typeof a);
 //?-------------------------------------------------------------------------------
+
 // ! strıng metodları
 //
 // prımıtıve-nanprımıtıv (object)
