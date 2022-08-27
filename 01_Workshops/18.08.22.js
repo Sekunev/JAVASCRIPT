@@ -77,16 +77,15 @@
 // 7-We wrote a function, rollTheDice(), which is supposed to simulate two dice being rolled and totalled. It’s close to doing what we want, but there’s something not quite right. Can you fix our code, please?
 
 const rollTheDice = () => {
-//   Math.random() 
-//   gives us a random number from 0 up to, but not including, 1
-//   We multiplied that by 6 to get a number between 0 and up to, but not including, 6
-//   But since we actually wanted numbers from 1 to 6, inclusive, we added 1
-    let die1 = Math.random() * 6 + 1;
-    let die2 = Math.random() * 6 + 1;
-    let toplam = die1 + die2;
-    return toplam;
-}
-
+  //   Math.random()
+  //   gives us a random number from 0 up to, but not including, 1
+  //   We multiplied that by 6 to get a number between 0 and up to, but not including, 6
+  //   But since we actually wanted numbers from 1 to 6, inclusive, we added 1
+  let die1 = Math.random() * 6 + 1;
+  let die2 = Math.random() * 6 + 1;
+  let toplam = die1 + die2;
+  return toplam;
+};
 
 // 8- Though an object’s mass remains consistent throughout the universe, weight is determined by the force of gravity on an object. Since different planets have different gravity, the same object would weigh different amounts on each of those planets! Cool, huh?
 // Write a function, calculateWeight(). It should:
@@ -105,7 +104,6 @@ const rollTheDice = () => {
 
 // let earthWeight = +prompt("ağırlık giriniz: ")
 // let planet = prompt("gezegen giriniz: ");
-
 
 // if (planet === "Mercury") {console.log(`Bu cismin Mercury gezegenindeki ağırlığı ${(earthWeight * 0.378).toFixed(2)} 'dır`);}
 // if (planet === "Venus") {console.log(`Bu cismin Venus gezegenindeki ağırlığı ${(earthWeight * 0.907).toFixed(2)} 'dır`);}
@@ -126,7 +124,6 @@ It can be hard to keep track of what’s truthy or falsy in JavaScript. Write a 
 
 // if (parseInt(value) === Number) {Boolean(value) ? console.log('true') : console.log('false')}
 
-
 // 10- A person’s number of imaginary friends are always 25% (or 1/4) of their total friends.
 
 // Write a function, numImaginaryFriends(), that takes in the total number of friends a person has and returns the number of imaginary friends they have.
@@ -138,4 +135,9 @@ It can be hard to keep track of what’s truthy or falsy in JavaScript. Write a 
 // let total = prompt("toplam arkadaş sayınız : ");
 // console.log(`imaginary friend sayınız ${Math.ceil(total*1/4)}`)
 
-
+function myFunc() {
+  if (arguments.length > 0) {
+    for (var i = 0; i < arguments.length; i++) console.log(arguments[i]);
+  }
+}
+myFunc(2, 3, 4, 6, 1, 7, 3);
