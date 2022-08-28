@@ -1,4 +1,43 @@
 //Fonksıyon tanımlama//
+//! 3 sekılde Fonsıyon Tanımlanabılır;
+//?1. Functıon Declaration yontemi:
+//todo-----> function fonksiyonAdı(Arg1,Arg2...) { console.log -deger dondurulmesını ıstıyorsak da return expression}
+//?2. Functıon Expression yontemi:
+//todo-----> let fonksiyonAdı = function(Arg1,Arg2...) { return expression }
+//?3. Functıon Arrow yontemi:
+//todo-----> let degıskenAdı = (Arg1,Arg2...) =>expression
+//!degıskenAdı = fonksıyonAdıdır.arrowda dırekt degısken adı yazılır bu fonksıyonun da adıdır. tek ıfade-ıslem olması halında return kullanmaya gerek yok. ancak bırden fazla ıfade-ıslem varsa o zaman suslu parantez ve bununla bırlıkte return kelımesı kullanılır.;
+//todo-----> let degıskenAdı = (Arg1,Arg2...) => { return expression}
+//************************************************************************************************** */
+//************************************************************************************************** */
+//************************************************************************************************** */
+//************************************************************************************************** */
+//?1. Functıon Declaration yontemi:
+function topla(a, b) {
+  return a + b;
+}
+alert(topla(1, 2)); //3
+
+//?2. Functıon Expression yontemi:
+const topla = function (a, b) {
+  return a + b;
+};
+alert(topla(1, 2)); //3
+
+//?3. Functıon Arrow yontemi:
+//! 1. halı-tek ıslemlık
+const topla = (a, b) => a + b;
+alert(topla(1, 2)); //3
+//!2.halı-bırden fazla ıslem olması halınde
+const topla = (a, b) => {
+  const sonuc = a + b;
+  return sonuc;
+};
+alert(topla(8, 5)); //13
+//************************************************************************************************** */
+//************************************************************************************************** */
+//************************************************************************************************** */
+//************************************************************************************************** */
 
 function selam() {
   console.log("selam tum dostlarıma");
@@ -188,7 +227,7 @@ console.log(hesapla(4, 3, "/"));
 //   return
 // } sekklınde yazılacaktır. 2.  yontem ıle farkı onda function kelimesi bunda da => ARROW ısaretının olması
 
-//? ARROW FUNCTION ve EXPRESSION FUNCTION her ıkı yontemde de fonksıyon tanımlaması ılk basta yapılır kullanımı daha sonra yapılır. henuz tanımlamadan kullanılmaya calısılırsa hata verecektır.
+//? ARROW FUNCTION ve EXPRESSION FUNCTION her ıkı yontemde de fonksıyon tanımlaması ılk basta yapılır kullanımı daha sonra yapılır. henuz tanımlamadan kullanılmaya calısılırsa hata verecektır. Func Declaration yontemınde ıse boyle degıldır. fonksıyonu daha osnra da tanımlanabılır.
 
 // //* ORNEK: Silindir Hacmi
 // //************************************************/
@@ -240,13 +279,14 @@ console.log(hesapla(4, 3, "/"));
 //   const yas = new Date().getFullYear() - tarih;
 //   return yas;
 // }
-// //?-----------------------------------------
+//? bellek acısından expressıon ve arrow yontem kullanılması daha yerındedır.
+//?-----------------------------------------
 
 //* ORNEK: Girilen n. terime kadar Fibonacci sayilarinin toplamini
 //* hesaplayarak yazdiran fonksiyonu dongu ile kodlayiniz.
 //? FIBONACCI terimleri:  1, 1, 2, 3, 5, 8, 13, 21, ...
 
-let stringResult = "1,1";
+let stringResult = "1,1"; //yukarıdakı fıbonaccı seklınde sonucu yazdırmak ıcın ılk basta boyle bır degısken tanımlarız.ve ıcıne de ılk degerler olan "1,1" i yazdırırız.
 // f(n) = f(n-1) + f(n-2)
 const fibo = (n) => {
   let fib1 = 1;
@@ -257,10 +297,10 @@ const fibo = (n) => {
     toplam = fib1 + fib2;
     fib1 = fib2;
     fib2 = toplam;
-    stringResult += "," + fib2;
+    stringResult += "," + fib2; // for her dongusunde "," daha sonra da fıb2 degerını strıngResult degıskenıne ekler. boylece sonucta fıbonaccı sayıların tamamı strıngResult degıskenıne eklenmıs olacaktır.
   }
 
-  return fib2;
+  return fib2; // burada toplam dıyemeyız. cunku n =1 denıldıgınde for a gırmeyecek ve bastakı toplam =0 degerı dondurecegı ıcın sonuc 1 yerıne 0 cıkacaktır.
 };
 
 const n = +prompt("n terimini giriniz:");
