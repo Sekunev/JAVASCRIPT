@@ -50,7 +50,10 @@ topla(dizi);
 
 //?FOR IN DÖNGÜSÜ ILE DIZI ITERASYONU
 • For döngüsünün kısaltılmış halidir. (sayaç ve koşul kullanmaya gerek yok.) kendısı bunu algılıyor. 
-• Özellikle dizi ve nesnelerin iterasyonu için geliştirilmiştir.
+• Özellikle dizi ve nesnelerin iterasyonu için geliştirilmiştir. yanı i dızının lenght uzunlugu kadar her seferınde bırer artarak tum elemanları dolasıyor.
+for (let i in dizi) {
+        console.log(dizi[i]);
+};
 for ( değişken in diziAdı) {
         Döngü içi 
 };
@@ -114,6 +117,10 @@ console.log(birleştir(adlar, soyAdlar))
 //?FOR OF DÖNGÜSÜ ILE DIZI ITERASYONU
 • FOR OF Döngüsü FOR IN döngüsünün Syntax’ına çok benzemektedir. • Ancak, FOR OF, bir çok veri yapısı üzerinde çalışabildiği için FOR IN’e göre daha geniş kullanım alanına sahiptir. 
 • Diziler, Stringler, Map’ler v.b bir çok veri yapısında kullanılabilir.
+her bır elemanın kendısıne ulasmak ıcın kullanılıyor.
+for (let item of dizi) {
+        console.log(item);
+};
 for ( değişken of veriYapısı) { 
         Döngü içi 
 };
@@ -136,11 +143,15 @@ console.log(yazı);
  //! 2kenden daha fazla durum varsa ıf else ıf else :))
 
 //?FOREACH METODU ILE DIZI ITERASYONU
-• Array.forEach() bir döngü deyimi değil bir dizi İTERASYON
-metodudur. 
+• Array.forEach() bir döngü deyimi değil bir dizi İTERASYON metodudur. 
 • Bu metot, bir fonksiyonu parametre olarak alır ve bu fonksiyona göre bir belirtilen dizi üzerinde iterasyon yapılabilir.
 • Avantajı kullanımı kolaydır. Dezavantajı ise döngüyü kırmak ve atlamak mümkün değildir. 
 • Ayrıca forEach metodu orijinal diziyi değiştirmez.
+* herhangı bır atama yapmadan elemanlarını ve ındex numaralarını yazdırabılırız.
+dizi.forEach((items, index) => {
+        console.log(items);
+        console.log(index);
+});
 
 //!ÖRNEK: Bir dizideki elemanları her birini ayrı ayrı yazdıran uygulamayı forEach metodu ile yazınız.
 let öğrenciler = ["John", "Ali", "Ahmet"];
