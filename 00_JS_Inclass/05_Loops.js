@@ -2,9 +2,9 @@
 
 // ?➤ JavaScript'te üç tür geleneksel döngü vardır:
 
-// ● for 
-// ● while 
-// ● do...while 
+// ● for
+// ● while
+// ● do...while
 
 // ?➤ aşğıdaki keyword'ler, döngü yinelemelerini kontrol etmek için kullanılır:
 
@@ -14,7 +14,7 @@
 //! ********* for *********
 //? The syntax of the for loop is:
 //! for (initializer; condition; iterator) {
-   // for loop body
+// for loop body
 // }
 
 //? Ornek: 1 den n kadar sayiları toplayan kodu yaziniz.
@@ -36,7 +36,7 @@
 //   console.log(rasgele);
 // }
 
-//* NOT:
+//* NOT: (math ile yuvarlama seçenekleri.)
 //* Math.floor() =>en yakin alt tamsayiya yuvarlar
 //* Math.ceil() =>en yaki ust tamsayiya yuvarlar
 //* Math.round() => degerine gore yuvarlar.
@@ -62,11 +62,10 @@
 //   console.log(`${sayi} ${sonuc}`);
 // }
 
-
 //? işlem sırası
 // 1. Başlatıcı(initializer) , değişkenleri başlatır ve/veya bildirir ve yalnızca bir kez yürütülür.
 // 2. koşul değerlendirilir. True ise kod bloğu çalışır false ise çalışmaz.
-// 3. 3. parametredeki yineleyici başlatıcının değerini günceller. 
+// 3. 3. parametredeki yineleyici başlatıcının değerini günceller.
 //! dikkat Yineleyici , true koşul olduğunda başlatıcının değerini günceller.
 // ! başlatıcıda const kullanılmaz çünkü değer değişecek.
 
@@ -105,7 +104,7 @@
 //     for(let j=0; j<10; j++){
 //         val += '* ';
 //     }
-    
+
 //     val += '\n';
 // }
 // console.log(val)
@@ -120,12 +119,11 @@
 //     }
 // }
 
-
 //! ********* while *********
 
 //? The syntax of the while loop is:
 //! while (condition) {
-       // body of loop
+// body of loop
 // }
 // örnek:
 
@@ -134,7 +132,7 @@
 //     count += 2
 //     console.log(count);
 // }
-// Aslında for döngüsündeki parametreler aynen kullanıldı. ama parantez içerisinde değil. 
+// Aslında for döngüsündeki parametreler aynen kullanıldı. ama parantez içerisinde değil.
 
 //? ORNEK: Kullanicidan 0-100 arasinda bir not isteyen ve girilen not
 //? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
@@ -149,13 +147,12 @@
 
 // console.log("Giridiginiz Not:", not);
 
-
 //! ********* DO-WHILE *********
 
 // Bu, koşul false olsa bile döngünün her zaman en az bir kez yürütüleceği anlamına gelir.
 // //? do...while Döngünün sözdizimi şöyledir:
 // //! do {
-    // body of loop
+// body of loop
 // } while(condition)
 // örnek:
 // let count = 0;
@@ -182,8 +179,6 @@
 //     i++
 // }while(i <= 10);
 
-
-
 //? ÖDEV: Klavyeden Q veya q karakteri girilene kadar not girişi yapan ve bu  karakterlerden birisi girildiğinde O ana kadar girilen tüm notların ortalamasını hesaplayarak konsola ortalamayı bastıran uygulamayı yazınız.
 
 // let not;
@@ -196,8 +191,6 @@
 //     ++sayac
 // }while(not != "Q" && not != "q")
 // console.log(`not ortalaması: ${notTop/sayac}`);
-
-
 
 //? ORNEK: Kullanicidan 0-100 arasinda bir not isteyen ve girilen not
 //? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
@@ -214,7 +207,6 @@
 
 // console.log("Giridiginiz Not:", not1);
 
-
 //! ********* break Statement *********
 
 // let i = 0
@@ -228,7 +220,6 @@
 // }
 // console.log(`i = ${i} after while loop`);
 
-
 //! ********* continue Statement *********
 //? continue, bir döngünün geçerli yinelemesinde ifadenin yürütülmesini sonlandırır ve hemen bir sonraki yinelemeye devam eder.
 
@@ -241,7 +232,6 @@
 //     console.log(i);
 // }
 
-
 // var sum = 0;
 // for (var i = 3; i < 7; i++) {
 // sum += i;
@@ -253,7 +243,7 @@
 
 // var players = ["Messi ", "Ronaldo ", "Hazard ", "Neymar ", "Salah "];
 // var text = "";
-// var i;  
+// var i;
 // for (i = 2; i < players.length; i++) {
 // text += players[i];
 // }
@@ -266,8 +256,7 @@
 // }
 // console.log ("The total is: " + sum);
 
-
-// ödev 
+// ödev
 //* Program 0*100 arasında rasgele bir sayı tutacak ve kullanıcının bu sayıyı 5 kere(hak) de bilmesini isteyecektir. Her yanlışta hakkını bir düşürecek ve ARTTIR/AZALT diyerek kullanıcıyı yönlendirecektir.Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer bildi ise "Tebrikler ... denemede bildiniz" yazacaktır.
 
 // let hak = 5;
@@ -289,7 +278,7 @@
 //           console.log("AZALT ⬇️");
 //         }
 //     } while (hak > 0);
-      
+
 //     if (tahmin !== rastgele) {
 //     console.log("Uzgunuz oyunu kaybettiniz 😔😔");
 //     }
