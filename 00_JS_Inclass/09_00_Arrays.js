@@ -177,20 +177,19 @@ console.log(sayilar1.lastIndexOf(4)); //? -1
 //! Aranilan bulunamamistir yazidirilmalidir.
 //!-----------------------------------------------------------
 
-// let dizi = [1, 2, "1", "2", 3];
-// let input = prompt("Dizi içerisinde sorgulamak istediğiniz elemanı giriniz.");
+let enterNum1 = prompt("Sayı gir1 :");
 
-// if (dizi.indexOf(input) === -1) {
-//   console.log(`Girilen sayının indisi bulunamamıştır.`);
-// } else if (dizi.indexOf(Number(input)) === -1) {
-//   console.log(`Girilen sayının indisi bulunamamıştır.`);
-// } else {
-//   console.log(`Girilen string türü sayının indisi ${dizi.indexOf(input)}'dir.`);
-//   console.log(
-//     `Girilen string türü sayının indisi ${dizi.indexOf(Number(input))}'dir.`
-//   );
-// }
-// çözüm yarıda kaldı
+if (sayilar1.includes(enterNum1)) {
+  console.log(
+    `${enterNum1} sayısının tipi ${typeof enterNum1} ve index numarası ${sayilar1.indexOf(
+      enterNum1
+    )} ayrıca number ${enterNum1} sayısının index numarası ${sayilar1.indexOf(
+      Number(enterNum1)
+    )}`
+  );
+} else {
+  console.log("Aranan değer bulunamamıştır.");
+}
 
 //* join()
 //*-----------------------------------------------------------

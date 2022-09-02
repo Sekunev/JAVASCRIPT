@@ -63,3 +63,40 @@ dizi = ["Elma", "Armut", "Muz", "Çilek"];
 dizi.splice(-2, 2, "nar");
 
 console.log(dizi);
+
+//Q1 -  Verilen arrayı elemanların baş harflerini içeren bir stringe dönüştürün.
+
+const input = [
+  "Dan",
+  "Özge",
+  "ihsan",
+  "Erhan",
+  "burhan",
+  "Cooper",
+  "Adil",
+  "Nurullah",
+  "semih",
+];
+
+input.map((n, i, arr) => {
+  arr[i] = n[0].toUpperCase();
+});
+
+console.log(input.toString());
+
+// 6- Dizinin son 2 elemanını siliniz.
+
+let dizi = ["Elma", "Armut", "Muz", "Çilek"];
+
+let n = dizi.pop();
+let m = dizi.pop();
+
+dizi.splice(dizi.length - 2, 2);
+
+console.log(dizi);
+
+dizi = ["Elma", "Armut", "Muz", "Çilek"];
+
+dizi.splice(-2, 2, "nar");
+
+console.log(dizi);
