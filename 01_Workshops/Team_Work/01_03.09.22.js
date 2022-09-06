@@ -55,3 +55,22 @@ let sorted1 = (arr1, arr2) => arr1.concat(arr2).sort((c, d) => c - d); // küç�
 console.log(sorted1(A, B));
 let sorted2 = (arr1, arr2) => arr1.concat(arr2).sort((c, d) => d - c); // büyükten küçüğe sıralama
 console.log(sorted2(A, B));
+
+// *****
+//  stringdeki en küçük ve en büyük sayıyı arada boşluk olacak şekilde yazınız.
+
+function highAndLow(numbers) {
+  let arr = numbers.split(" ");
+  arr.sort((a, b) => a - b);
+  return arr[arr.length - 1] + " " + arr[0];
+}
+
+console.log(
+  highAndLow("1 2 3 4 5"),
+  highAndLow("1 2 -3 4 5"),
+  highAndLow("1 9 3 4 -5")
+);
+
+arr = [1, 2, 3, 4, 5];
+console.log(arr[arr.length - 1]);
+console.log(arr.at(-1));

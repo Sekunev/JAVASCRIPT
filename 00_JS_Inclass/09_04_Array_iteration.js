@@ -120,3 +120,28 @@ salaries
 //* ======================================================
 //*                 REDUCE METHOD
 //* ======================================================
+
+console.log("*************");
+// const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
+
+//! başlangıç değeri (value) defaultu 0'dır.
+//? reduse bir değer döndürür.
+// salaries dizisindeki elemanların toplamını yazınız.
+
+const someOfSalaries = salaries.reduce((toplam, value) => toplam + value, 0);
+
+// çarpma gibi diğer işlemlerde yapılabilir.
+// const someOfSalaries1 = salaries.reduce((toplam, value) => toplam * value, 1);
+
+console.log(someOfSalaries);
+
+//? Ornek: Bir Firma, 9000 TL den az olan maaşlara %10 zam yapmak istiyor
+//? ve zam yapılan bu kişilere toplam kaç TL ödeneceğini bilmek istiyor.
+//? İlgili programı yazınız.
+
+const zamlıToplam = salaries
+  .filter((x) => x <= 9000)
+  .map((x) => Math.trunc(x * 1.1))
+  .reduce((top, val) => top + val, 0);
+
+console.log(zamlıToplam);
