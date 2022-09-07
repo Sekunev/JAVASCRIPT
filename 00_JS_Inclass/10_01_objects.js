@@ -113,6 +113,7 @@ const person = worker; //! Shallow (Sig - Sığ) Copying
 
 person.dob = 2000;
 // yeni bir atama yapıldığında worker da değişir.
+// Bu yöntem aslında aynı adresi gösteren iki farklı objedir.
 // console.log("PERSON:", person);
 
 //! Deep Copy
