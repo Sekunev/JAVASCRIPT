@@ -36,6 +36,8 @@ const cars = {
 const { car1, car2 } = cars;
 console.log(car1);
 
+// aşağıda isim değişikliği yaptık. elemanları DESTRUCTURING yaptık.
+
 const { name: c1Name, model: c1Model } = car1;
 const { name: c2Name, model: c2Model } = car2;
 
@@ -62,6 +64,8 @@ const team = [
     age: 40,
   },
 ];
+
+// aşağıda team dizesindeki bilgileri alt alta yazdıralım.
 //* Classical
 team.forEach((p) => {
   console.log("****************");
@@ -74,6 +78,7 @@ team.forEach((p) => {
 //* DESTRUCTURING
 team.forEach((p) => {
   const { name, surname, job, age } = p;
+  // p bir obje forEach ile itere edildiği için.
   console.log("****************");
   console.log("Name:", name);
   console.log("Surname:", surname);
@@ -110,8 +115,10 @@ const names = ["Ahmet", "Mehmet", "İsmet", "Saffet"];
 //*Classical
 const mehmet = names[1]; //* indexing
 
+//? Arraylarda sıra esastır.
 const [p1, p2, , p4] = names;
 console.log(p1, p2, p4);
+console.log(p1, p2);
 
 //*======================================================
 //*  REST (...)
@@ -140,8 +147,8 @@ const personel = {
 
 const { pName, job, ...ageSurname } = personel;
 
-console.log(ageSurname);
-console.log(pName, job);
+console.log(ageSurname); // obje döner.
+console.log(pName, job); // string döner.
 
 //! 2- Bir fonksiyonun argumanlarini diziye cevirmek icin kullanilabilir.
 
@@ -151,11 +158,13 @@ const sum = (x, y) => x + y;
 console.log(sum(1, 2, 3, 4, 5, 6));
 
 const sumAll = (...numbers) => {
-  console.log(numbers); //? (4) [1, 2, 3, 4]
+  console.log(numbers); //? (6) [1, 2, 3, 4, 5, 6]
   return numbers.reduce((s, n) => (s += n), 0);
 };
 
 console.log("SUM OF NUMBERS:", sumAll(1, 2, 3, 4, 5, 6));
+
+// Noah Adams is a Developer and Instr and Professor and Dad çıktırsını rest ile yapınız.
 
 const showName = (name, surname, ...titles) => {
   console.log(titles);
@@ -165,6 +174,58 @@ const showName = (name, surname, ...titles) => {
 
 showName("Noah", "Adams", "Developer", "Instr", "Professor", "Dad");
 
+// 1. ve 2. argumanları ayrı geri kalanların hepsini bir arrayda topladık join ile aralarına and yerleştirerek yazdırdık.
+
 //*======================================================
 //*  SPREAD (...)
 //* ======================================================
+//? Spread operatoru ise iterables olan bir elemani bireysel
+//? degerler haline getirir.
+
+//* array concatination
+const flyingVecihles = ["Aircraft", "Helicopter", "QuadCopter"];
+const automobiles = ["Truck", "Bus", "Car", "SUV"];
+// const allVehicles = [flyingVecihles, automobiles];
+const allVehicles = [...flyingVecihles, ...automobiles];
+console.log(allVehicles);
+
+const citrus = ["orange", "lime", "lemon"];
+const fruits = ["apple", ...citrus, "banana", "chery", "pear"];
+console.log(fruits);
+
+//* String spread
+let str = "Hello FS12";
+const charArray = [...str];
+console.log(charArray, str);
+
+charArray[0] = "X";
+console.log(charArray, str);
+
+//* Max() - Dizileri fonksiyonlara acik bir sekilde parametre vermek icin
+console.log(Math.max(1, 3, 5, 2, 10));
+const nums = [1, 3, 5, 2, 10];
+console.log(Math.max(...nums));
+
+//* Array Copy
+const myNumbers = [1, 2, 3];
+const herNumbers = [-1, ...myNumbers, 7];
+const hisNumbers = [...herNumbers];
+hisNumbers.push(101);
+console.log("MY:", myNumbers, "HIS:", hisNumbers);
+
+console.log(herNumbers);
+
+//* Object Copy
+
+const myObj = { a: 1, b: 2, c: 4 };
+const herObj = { a: 2, z: 4, c: 3 };
+
+const copiedObj = { ...myObj };
+console.log(copiedObj);
+
+copiedObj.c = "33";
+console.log(copiedObj, myObj);
+
+const combinedObj = { ...herObj, ...myObj };
+
+console.log(combinedObj);

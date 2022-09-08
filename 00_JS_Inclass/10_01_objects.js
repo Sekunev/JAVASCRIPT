@@ -253,7 +253,7 @@ Object.values(people)
 //********************************************************
 //* JSON => Javascript Object Notation
 //********************************************************
-
+//? Array yöntemlerini daha kolay kullanabilmek, objelerde iterasyon kullanabilmek maksadıyla JSON oluşturulmuş.
 const team = [
   { name: "Josh", surname: "Adams", job: "developer", age: 30 },
   { name: "Mary", surname: "Bary", job: "tester", age: 22 },
@@ -262,11 +262,17 @@ const team = [
 
 console.log(team);
 console.log(team[2]);
+console.log(team[0]);
+console.log(team[2].job);
 
 //* Ornek1: team dizisindeki job'lari tek tek yazdiriniz.
 team.forEach((person) => console.log(person.job));
 
 //* Ornek2: age'leri bir artirarak yeni bir diziye saklayiniz.
+// yeni bir diziye saklayiniz dediği için map. forEach yeni dizide saklamaz.
+let agess = team.forEach((p) => console.log(p.age + 1));
+console.log(agess); // undefined
+
 const ages = team.map((p) => p.age + 1);
 
 //* Ornek3: name ve surname'leri birlestirip buyuk harfe ceviren ve
@@ -277,6 +283,8 @@ const ages = team.map((p) => p.age + 1);
 //   fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
 //   age: p.age + 5,
 // }));
+
+//? => işareti sonrası () in amacı tek blok olduğunu belirtmek ve arrow'un {} ile karışmasını engellemektir.
 
 //?Alternativly
 const teamFullName = team.map((p) => {
