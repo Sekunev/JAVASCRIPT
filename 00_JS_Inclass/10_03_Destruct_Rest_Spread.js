@@ -203,14 +203,14 @@ console.log(charArray, str);
 
 //* Max() - Dizileri fonksiyonlara acik bir sekilde parametre vermek icin
 console.log(Math.max(1, 3, 5, 2, 10));
-const nums = [1, 3, 5, 2, 10];
+const nums = [1, 3, 5, 2, 10]; // max fonksiyonu parametre olarak array almaz o yüzden spread ile array olmaktan çokarırız.
 console.log(Math.max(...nums));
 
 //* Array Copy
 const myNumbers = [1, 2, 3];
 const herNumbers = [-1, ...myNumbers, 7];
 const hisNumbers = [...herNumbers];
-hisNumbers.push(101);
+hisNumbers.push(101); //copya array'a ekleme yapsakda ilk array etkilenmedi.
 console.log("MY:", myNumbers, "HIS:", hisNumbers);
 
 console.log(herNumbers);
@@ -227,5 +227,6 @@ copiedObj.c = "33";
 console.log(copiedObj, myObj);
 
 const combinedObj = { ...herObj, ...myObj };
+// birleştirme yaparken iki aynı key varsa sondakine öncelik veriyor.
 
 console.log(combinedObj);

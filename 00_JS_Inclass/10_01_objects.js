@@ -149,6 +149,8 @@ const personal = {
   // },
 };
 
+console.log(personal.calculateAge(2022));
+
 //! NOT: arrow fonksiyonlari ozellikle callback fonksiyonu olarak
 //! kullanilmak ve bu fonksiyonlarda this keyword kullanim
 //! gereksinimini kaldirmak icin gelistirilmistir.
