@@ -62,8 +62,6 @@ buttomborder.style.background = "yellow";
 let pointer = document.querySelector("#g3");
 pointer.style.cursor = "pointer";
 
-console.log(input.value);
-
 // queryselector() yöntemi ile part-1'e bg özelliği veriniz.
 
 let h2bg = document.querySelector("#task-list h2");
@@ -81,3 +79,61 @@ console.log(consli); //NodeList
 consli.forEach((a) => {
   console.log(a.textContent);
 });
+
+//* EXAMPLE-6
+
+// Görev 6 nın parentini consola yazdırınız.
+
+let gor6 = document.querySelector(".task2");
+
+console.log(gor6.parentElement);
+console.log(gor6.parentNode);
+
+// Görev 6 nın parentine border verniz.? (traverse)
+
+const gor6Parent = gor6.parentNode;
+
+gor6Parent.style.border = "2px solid red";
+
+// Görev 6 nın parentlerinden ilk  ul ın  bg'sini blue yapın.  (closest)
+
+const gor6ul = gor6.closest("ul");
+gor6ul.style.background = "blue";
+
+// task-list id sinin alt elemanlarını (children) consola yazdırın. 2. çocugun bg sini değiştirin.
+
+let tasklist = document.querySelector("#task-list");
+
+console.log(tasklist.children);
+
+tasklist.children[2].style.background = "yellow";
+
+// görev 5 in kardeşlerine ulaşın farklı bg'ler verin.
+
+let gorev5 = document.querySelector(".task-class").children[2];
+
+gorev5.previousElementSibling.style.background = "yellow";
+gorev5.nextElementSibling.style.background = "red";
+
+//* EXAMPLE-7
+
+// Part 1 altına bir p elementi ekleyip içeriğine "Bugün yapılacaklar listesi" ekleyin.
+
+let newP = document.createElement("p");
+newP.id = "newpar";
+newP.setAttribute("class", "newclass");
+// 1. parametre ne vermek istediğimizi, 2. adını ifade eder.
+const text = document.createTextNode("Bugün yapılacaklar listesi");
+newP.appendChild(text);
+console.log(newP);
+
+let h2 = document.querySelector("#task-list h2");
+h2.after(newP);
+// h2.before(newP);
+
+// console.log(newP.getAttribute("class"));
+
+//? INNER HTML ile Görev 7 yazdır.
+
+const ul = document.querySelector(".task-class");
+ul.innerHTML += `<li id="list-id" class="list">Görev 7</li>`;
