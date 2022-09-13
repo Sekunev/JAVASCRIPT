@@ -2,8 +2,13 @@
 // Todo App başlığını getElementById yöntemi ile stil Verin.
 
 const button = document.getElementById("title");
+
 button.style.background = "black";
 button.style.color = "white";
+
+console.log(button.id);
+console.log(button.className);
+console.log(button.classList);
 
 //* EXAMPLE-2
 // Görev 1'e getElementsByTagName metodu ile yeşil backgrand verin.
@@ -20,6 +25,8 @@ elementone.textContent = "Görev 1: preclassları bitir";
 
 // görev 2'yi innerText ile consola yazdırın.
 console.log(list[1].innerText);
+list.innerText = "aa";
+list.innerHTML = "<p>bb</p>";
 
 // innerText html kodlarına bakarak text veriyor.
 // textContent bütün text'leri veriyor.
@@ -137,3 +144,121 @@ h2.after(newP);
 
 const ul = document.querySelector(".task-class");
 ul.innerHTML += `<li id="list-id" class="list">Görev 7</li>`;
+
+// ***** EVENTS *****
+//* EXAMPLE-1 (Mouse Over, Mouse Out )
+// PART 1 mouse üzerine geldiğinde mavi ayrıldığında kırmızı yapınız.
+
+let part1 = document.querySelector("#task-list h2");
+console.log(part1);
+part1.onmouseover = function () {
+  part1.style.color = "blue";
+  part1.style.background = "white";
+};
+part1.onmouseout = function () {
+  part1.style.color = "red";
+  part1.style.background = "green";
+};
+
+// addEventListener yöntemi
+part1.addEventListener("click", () => {
+  alert("part1 tıklandı.");
+});
+
+// butona tıklandığında boşsa değer girilmedi uyarısı versin. doluysa ne yazdıysak o değeri versin.
+
+document.getElementById("btn").addEventListener("click", () => {
+  const input = document.getElementById("input");
+  !input.value ? alert("boş") : alert(`${input.value} girdiniz`);
+  input.value = "";
+});
+
+// görev-1,2,3 üzerine gelindiğinde büyüsün.
+
+let büyütec = document.querySelectorAll(".task");
+büyütec.forEach((element) => {
+  element.style.transition = "all .5s";
+  element.onmouseover = () => {
+    element.style.fontSize = "2rem";
+    element.style.transform = "translateX(20px)";
+  };
+  element.onmouseout = () => {
+    element.style.fontSize = "1rem";
+    element.style.transform = "translateX(-20px)";
+  };
+});
+
+// sayfa yüklendiğinde input ta otomatik kursor olsun. (focus)
+// window.onload = function () {
+//   document.querySelector("#input").focus();
+// };
+// **alternatif çözüm
+window.addEventListener("load", () => {
+  document.querySelector("#input").focus();
+});
+
+// Proğramla Dilleri
+const langinput = document.querySelector(".lang-input");
+const addBtn = document.querySelector("#add-btn");
+const deleteBtn = document.querySelector("#delete-btn");
+const langlist = document.querySelector("#lang-list");
+
+const newUl = document.createElement("ul");
+langlist.appendChild(newUl);
+addBtn.addEventListener("click", () => {
+  if (!langinput.value) {
+    alert("Bir dil giriniz.");
+  }
+  if (langinput.value.toLowerCase() === "javascript") {
+    newUl.innerHTML += `<li class = "text-danger">${langinput.value}</li>`;
+    langinput.value = "";
+  } else {
+    newUl.innerHTML += `<li>${langinput.value}</li>`;
+    langinput.value = "";
+    console.log(newUl);
+  }
+  langinput.focus();
+});
+
+// newUl.classList.add(class="text-danger");
+// deleteBy
+deleteBtn.addEventListener("click", () => {
+  newUl.childElementCount > 0
+    ? newUl.removeChild(newUl.lastElementChild)
+    : alert("silinecek öge yok.");
+});
+
+// key event
+
+langinput.addEventListener("keydown", (event) => {
+  // console.log(event);
+  // console.log(event.target);
+  // console.log(event.keyCode);
+  // console.log(event.code);
+
+  if (event.keyCode === 13) {
+    addBtn.click();
+  }
+  if (event.code === "Delete") {
+    deleteBtn.click();
+  }
+});
+// kırmızı yap
+
+langinput.addEventListener("keydown", (event) => {
+  // console.log(event);
+  // console.log(event.target);
+  // console.log(event.keyCode);
+  // console.log(event.code);
+
+  if (event.keyCode === "javascript") {
+    addBtn.click();
+  }
+  if (event.code === "Delete") {
+    deleteBtn.click();
+  }
+});
+
+window.addEventListener("load", () => {
+  langinput.focus();
+});
