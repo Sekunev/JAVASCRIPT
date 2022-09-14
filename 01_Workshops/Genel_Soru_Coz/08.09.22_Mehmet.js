@@ -151,3 +151,13 @@ const smallerThanAvg = (arr) => {
   return arr.find((item) => item < avg);
 };
 console.log(smallerThanAvg([45, 30, 5, 8, 99, 6]));
+
+// *****************
+console.log("*****************");
+function index(array, n) {
+  for (let i = 0; i < array.length; i++) {
+    return array.length - 1 >= n ? array[n] ** n : -1;
+  }
+}
+
+console.log(index([4, 3, 3, 5], 3));
