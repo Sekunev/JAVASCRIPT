@@ -28,11 +28,12 @@ deleteBtn.addEventListener("click", () => {
 });
 
 //? enter key and  del key event handler
-langInput.addEventListener("keydown", (event) => {
-  // console.log(event);
-  // console.log(event.target);
-  // console.log(event.keyCode);
-  // console.log(event.code);
+langInput.addEventListener("click", (event) => {
+  console.log(event);
+  console.log(event.target);
+  console.log(langInput);
+  console.log(event.keyCode);
+  console.log(event.code);
 
   if (event.keyCode === 13) {
     addBtn.click();
