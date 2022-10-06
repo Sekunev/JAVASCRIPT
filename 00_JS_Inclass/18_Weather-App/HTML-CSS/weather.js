@@ -93,7 +93,7 @@ const getWeatherDataFromApi = async () => {
                           </h2>
                           <div class="city-temp">${Math.round(
                             main.temp
-                          )}<sup>°C</sup></div>
+                          )}<sup>${degree}</sup></div>
                           <figure>
                               <img class="city-icon" src="${iconUrl}">
                               <figcaption>${weather[0].description}</figcaption>
@@ -151,6 +151,8 @@ const getWeatherDataFromApi = async () => {
 document.querySelector(".options").addEventListener("click", (e) => {
   if (e.target.parentElement.classList.contains("languages")) {
     lang = e.target.value;
+    // lang = e.target.textContent;
+    // console.log(e.target);
     // } else if (e.target.value == "en") {
     //   lang = e.target.value;
     // } else if (e.target.value == "fr") {

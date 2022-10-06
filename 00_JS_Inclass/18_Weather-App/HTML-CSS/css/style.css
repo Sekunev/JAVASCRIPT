@@ -50,7 +50,7 @@ ul {
 
 body {
   font: 1rem/1.3 "Roboto", sans-serif;
-  background: var(--bg_main);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   color: var(--text_dark);
   padding: 70px;
 }
@@ -79,6 +79,8 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
 }
 
 .top-banner form input {
@@ -271,4 +273,34 @@ body {
 
 .api a:hover {
   text-decoration: none;
+}
+
+.choices {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.switch {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  justify-content: center;
+  /* border: 1px solid red; */
+  align-items: center;
+  font-size: 1.5rem;
+}
+.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+.input-hidden:hover {
+  border: 6px solid red;
+  opacity: 0.51;
+}
+label {
+  transition: all 1s;
+}
+label:hover {
+  transform: scale(120%);
+  cursor: pointer;
 }

@@ -36,8 +36,17 @@ const SlidingWindowMaximum = (array, k) => {
   return arr;
 };
 
-console.log(SlidingWindowMaximum(array, k));
-console.log(SlidingWindowMaximum(array1, k1));
+// console.log(SlidingWindowMaximum(array, k));
+// console.log(SlidingWindowMaximum(array1, k1));
+// let arr = [];
+// for (let i = 0; i <= array.length - k; i++) {
+//   // console.log(Math.max(array.slice(i, i + k)));
+//   // console.log(array.slice(i, i + k));
+//   arr.push(Math.max(...array.slice(i, i + k)));
+//   // console.log(...array.slice(i, i + k));
+//   // console.log(array.slice(i, i + k));
+//   //spread
+// }
 
 //********** 2 **********
 
@@ -49,14 +58,15 @@ console.log(SlidingWindowMaximum(array1, k1));
 
 //********** -3- **********
 // var Storm = function () {};
-
+// console.log(Storm);
 // Storm.prototype.precip = "rain";
-
+// console.log(Storm.prototype.precip);
 // var WinterStorm = function () {};
-
+// console.log(WinterStorm);
 // WinterStorm.prototype = new Storm();
-
+// console.log(WinterStorm.prototype);
 // WinterStorm.prototype.precip = "snow";
+// console.log(WinterStorm.prototype.precip);
 
 // var bob = new WinterStorm();
 
@@ -67,8 +77,10 @@ console.log(SlidingWindowMaximum(array1, k1));
 // function logThis() {
 //   this.desc = "logger";
 //   console.log(this);
+//   return 2;
 // }
-// new logThis();
+// asd = new logThis();
+// console.log(asd);
 // console.log(logThis);
 
 // obje = {
@@ -80,13 +92,13 @@ console.log(SlidingWindowMaximum(array1, k1));
 //********** -5- **********
 // Aşağıdaki sınıf için, bir X instanceından 42 değerini nasıl alırsınız?
 
-class X {
-  get Y() {
-    return 42;
-  }
-}
-var x = new X();
-console.log(x.Y);
+// class X {
+//   get Y() {
+//     return 42;
+//   }
+// }
+// var x = new X();
+// console.log(x.Y);
 
 //********** -7- **********
 
@@ -94,6 +106,7 @@ console.log(x.Y);
 // function setEnd() {
 //   var end = 10;
 // }
+// setEnd();
 // console.log(setEnd());
 // console.log(end);
 
@@ -105,3 +118,8 @@ console.log(x.Y);
 // console.log(sayHello.prototype);
 
 //********** -9- **********
+const fetchData = fetch("https://jsonplaceholder.typicode.com/todos")
+  .then((response) => response.json())
+  .then((json) => console.log(json))
+  .catch((err) => console.log(err));
+fetchData();

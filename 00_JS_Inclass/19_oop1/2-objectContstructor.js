@@ -10,6 +10,8 @@
 
 //? Object Constructor
 // functionların ilk harfi küçük olur ama burada büyük harf ile başladık. sebebi Bunun bir obje Constructor olduğunu göstermek.
+
+// constructor new keyword'u ile yeni bir instans oluşturulduğunda ilk çağırırılacak kurucu fonksiyonlardır. ancak biz fonksiyonları constructor içine değil dışına yazıyoruz sebebi: prototype alanına gitmesi için. constructor içine yazıldığında her yeni nesne oluşturulduğunda bellekte yer kaplıyor bu da istenmeyen bir durum.
 function Book(title, author, year) {
   this.author = author;
   this.title = title;

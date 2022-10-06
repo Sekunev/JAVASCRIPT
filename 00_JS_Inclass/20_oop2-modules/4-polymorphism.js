@@ -26,8 +26,14 @@ class Book {
   getSummary() {
     return `${this.title} was writtten by ${this.author} in ${this.year}`;
   }
+
+  setPrice(price) {
+    const taxRate = 1.1;
+    this.price = Math.trunc(price * taxRate);
+  }
 }
 
+//! Overrided ve Overloaded mülakat sorusu olabilir
 //? Sub-Class tanimlamasi (Inheritance)
 class Magazine extends Book {
   constructor(title, author, year, month) {
@@ -36,7 +42,7 @@ class Magazine extends Book {
     this.month = month;
   }
   //! Overrided Metot (Parent class'daki bir metodun farkli
-  //! fonksiyonellikle fakat ayni isimle tanimlanmasi)
+  //! fonksiyonellikle  ve ayni parametre listesi ile yeniden tanimlanmasi) yani aynı isimle yeniden içeriğini değiştirerek yeniden tanımlandı.
   getSummary() {
     return `${this.title} was writtten by ${this.author} in ${this.year} in ${this.month}`;
   }
@@ -45,9 +51,38 @@ class Magazine extends Book {
   getSummaryParent() {
     return super.getSummary();
   }
+  //! Overloaded Metot (Ayni metodun farkli parametreler ile kullanilmasi)
+  //? isim aynı parametre listesi farklı (miras alınan book'a göre)
+  setPrice(price, taxRate = 1.1) {
+    this.price = Math.trunc(price * taxRate);
+  }
 }
+
+//? Parent
+const book1 = new Book("Simyaci", "Poelho Coelgo", 1988);
+console.log(book1);
+book1.setPrice(100);
+console.log(book1);
 
 //? Magazine objesinin yeni bir instance
 const mag1 = new Magazine("Scientific Research", "Einstein", 1926, "Sep");
 console.log(mag1.getSummary());
 console.log(mag1.getSummaryParent());
+
+mag1.setPrice(50);
+console.log(mag1);
+
+//! JS'de overloading, parent-child class arasinda kullanilir.
+//? Ancak diger bir cok dilde ayni metot ayni class icerisinde de farkli paramtreler ile tekrar tekrar yazilabilir. Aşağıdaki örneğin JS2de karşılığı yoktur.
+//? overloading
+// function x(string a, string b) {
+//   return a + b;
+// }
+
+// //? overloading
+// function x(integer a, integer b) {
+//   return a + b;
+// }
+
+// x(1, 2);
+// x("1","2")
