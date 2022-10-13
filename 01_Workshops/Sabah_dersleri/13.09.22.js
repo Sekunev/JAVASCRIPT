@@ -262,3 +262,7 @@ langinput.addEventListener("keydown", (event) => {
 window.addEventListener("load", () => {
   langinput.focus();
 });
+let as = () => {
+  console.log(this);
+};
+as();
