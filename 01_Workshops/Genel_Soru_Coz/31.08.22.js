@@ -147,19 +147,19 @@ for (let i = 1; i <= num1 && i <= num2; i++) {
 //? Write a code to draw Whiteball and Powerball numbers for the Powerball lottery game.
 //? 5 Whiteball numbers are chosen from 01 to 69 and 1 Powerball number is chosen from 1 to 26.
 
-const powerball = () => {
-  let powerball = Math.floor(Math.random() * 26) + 1;
-  let whiteball = [];
+// const powerball = () => {
+//   let powerball = Math.floor(Math.random() * 26) + 1;
+//   let whiteball = [];
 
-  for (let i = 1; i <= 5; i++) {
-    let random = Math.floor(Math.random() * 69) + 1;
-    whiteball.push(random);
-  }
+//   for (let i = 1; i <= 5; i++) {
+//     let random = Math.floor(Math.random() * 69) + 1;
+//     whiteball.push(random);
+//   }
 
-  return `${whiteball.join(", ")}, ${powerball}`;
-};
+//   return `${whiteball.join(", ")}, ${powerball}`;
+// };
 
-console.log(powerball());
+// console.log(powerball());
 
 // 2. Bölüm Functions
 
@@ -209,27 +209,27 @@ console.log(powerball());
 //? A perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself.
 //? For instance, 6 has divisors 1, 2 and 3 (excluding itself), and 1 + 2 + 3 = 6, so 6 is a perfect number.
 
-// const perfectNums = () => {
-//   let arr = [];
+const perfectNums = () => {
+  let arr = [];
 
-//   for (let i = 1; i <= 1000; i++) {
-//     sum = 0;
+  for (let i = 1; i <= 1000; i++) {
+    sum = 0;
 
-//     for (let k = 1; k < i; k++) {
-//       if (!(i % k)) {
-//         sum += k;
-//       }
-//     }
+    for (let k = 1; k < i; k++) {
+      if (!(i % k)) {
+        sum += k;
+      }
+    }
 
-//     if (sum === i) {
-//       arr.push(i);
-//     }
-//   }
+    if (sum === i) {
+      arr.push(i);
+    }
+  }
 
-//   return arr;
-// };
+  return arr;
+};
 
-// console.log(perfectNums());
+console.log(perfectNums());
 
 //! Q-5
 //? Develop a guessing game. Randomly generate a number between 0-100. Ask the user to guess that number.
